@@ -1,14 +1,13 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
-WP_048120720.1       -          MCRA                 -                  0 1117.1   2.5         0 1116.9   2.5   1.0   1   0   0   1   1   1   1 MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
 #
 # Program:         hmmsearch
 # Version:         3.2.1 (June 2018)
 # Pipeline mode:   SEARCH
 # Query file:      MCRA.hmm
-# Target file:     proteomes/proteome_50.fasta
-# Option settings: ./hmmsearch --tblout .tbl MCRA.hmm proteomes/proteome_50.fasta 
+# Target file:     proteomes/proteome_36.fasta
+# Option settings: ./hmmsearch --tblout proteomes/proteome_36mcrA.tbl MCRA.hmm proteomes/proteome_36.fasta 
 # Current dir:     /afs/crc.nd.edu/user/r/rknott/Private/week8/bioinformatics_project2019
-# Date:            Tue Oct 15 11:43:49 2019
+# Date:            Tue Oct 15 11:46:46 2019
 # [ok]

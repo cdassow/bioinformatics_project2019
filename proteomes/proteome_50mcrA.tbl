@@ -8,7 +8,7 @@ WP_048120720.1       -          MCRA                 -                  0 1117.1
 # Pipeline mode:   SEARCH
 # Query file:      MCRA.hmm
 # Target file:     proteomes/proteome_50.fasta
-# Option settings: ./hmmsearch --tblout .tbl MCRA.hmm proteomes/proteome_50.fasta 
+# Option settings: ./hmmsearch --tblout proteomes/proteome_50mcrA.tbl MCRA.hmm proteomes/proteome_50.fasta 
 # Current dir:     /afs/crc.nd.edu/user/r/rknott/Private/week8/bioinformatics_project2019
-# Date:            Tue Oct 15 11:43:49 2019
+# Date:            Tue Oct 15 11:46:47 2019
 # [ok]

@@ -1,14 +1,15 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
-WP_048120720.1       -          MCRA                 -                  0 1117.1   2.5         0 1116.9   2.5   1.0   1   0   0   1   1   1   1 MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
+WP_010867429.1       -          hsp70                -             0.0062   11.6   6.6    0.0076   11.3   6.6   1.1   1   0   0   1   1   1   1 transcriptional regulator 
+WP_010868356.1       -          hsp70                -              0.013   10.5   3.6     0.014   10.4   3.6   1.1   1   0   0   1   1   1   0 hypothetical protein 
 #
 # Program:         hmmsearch
 # Version:         3.2.1 (June 2018)
 # Pipeline mode:   SEARCH
-# Query file:      MCRA.hmm
-# Target file:     proteomes/proteome_50.fasta
-# Option settings: ./hmmsearch --tblout .tbl MCRA.hmm proteomes/proteome_50.fasta 
+# Query file:      hsp70.hmm
+# Target file:     proteomes/proteome_40.fasta
+# Option settings: ./hmmsearch --tblout proteomes/proteome_40hsp70.tbl hsp70.hmm proteomes/proteome_40.fasta 
 # Current dir:     /afs/crc.nd.edu/user/r/rknott/Private/week8/bioinformatics_project2019
-# Date:            Tue Oct 15 11:43:49 2019
+# Date:            Tue Oct 15 11:46:50 2019
 # [ok]
