@@ -1,17 +1,22 @@
 #Identifying a candidate pH-resistant methanogenic Archaea
-#there are 50 candidates, in proteomes directory
-#how many HSP70, binary do they have/not have mcrA
-
-cat ./ref_sequences/hsp70gene_*.fasta | ../muscle | ../hmmr3/bin/hmmbuild | ../hmmer3/hmmsearch
-cat ./ref_sequences/mcrAgene_*.fasta | ../muscle -out mcrAalign ../hmmr3/bin/hmmbuild| ../hmmer3/hmmsearch
+#there are 50 candidates, in proteomes directory how many HSP70, binary do they have/not have mcrA
+#USAGE bash candidateID.sh ./proteomes/proteome_*.fasta
 
 
-#put ref_sequences together??
-#align reference sequences muscle -in FILENAME -out OUTPUT_FILE
-#hmmbuild (alignment in --> hidden markov model out)
-#hmmsearch (to find matches)
+cat ./ref_sequences/hsp70gene_*.fasta | ../muscle | ../hmmr3/bin/hmmbuild | for proteome in $1
+	do
+	echo $proteome
+        ../hmmer3/hmmsearch $proteome
+        >hsp70
+	done
 
 
-#for loop with grep, regex
+cat ./ref_sequences/mcrAgene_*.fasta | ../muscle | ../hmmr3/bin/hmmbuild| for proteome in $1
+	do 
+	echo $proteome
+	../hmmer3/hmmsearch $proteome
+	>mcrA
+	done
+
 #does proteome__.fasta have mcrA gene
 #how many HSP70 does proteome__fasta have?
