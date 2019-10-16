@@ -1,6 +1,7 @@
 #Identifying a candidate pH-resistant methanogenic Archaea; there are 50 candidates,
 #in proteomes directory how many HSP70, binary do they have/not have mcrA
 #USAGE bash candidateID.sh ./proteomes/proteome_*.fasta
+
 for proteome in "$1"
 	do
 	echo $proteome
