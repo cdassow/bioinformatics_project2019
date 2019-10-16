@@ -24,4 +24,10 @@ cat ~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/ref_sequenc
 ############################################
 # STEP 3 : hmmSearch #
 ############################################
+# compare the constructed hmms against sequences
 
+for microbe in {01..50}
+do
+  ./ham/bin/hmmsearch --tblout hsp70_tbl_$microbe hsp70_hmm ~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/proteomes/proteome_$microbe.fasta
+  ./ham/bin/hmmsearch --tblout mcrA_tbl_$microbe mcrA_hmm ~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/proteomes/proteome_$microbe.fasta
+done
