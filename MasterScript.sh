@@ -4,18 +4,14 @@
 # STEP 1 : ALIGNMENT #
 ############################################
 #
-#Using the muscle utility to align the desired genes. Enter your 2 desired gene types as the first two shell variables
-# bash MasterScript.sh 'hsp70*.fasta' 'mcrAgene*.fasta'
+# Using the muscle utility to align the desired genes.
+# bash MasterScript.sh 
 
-for gene in ref_sequences/
-do
-  muscle -in $1 -out $1_aligned
-done
-for gene in ref_sequences/
-do
-  muscle -in $2 -out $2_aligned
-done
+cat ~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/ref_sequences/hsp70* > hsp70_all
+cat ~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/ref_sequences/mcrA* > mcrA_all
+./muscle -in hsp70_all -out hsp70_all_aligned
+./muscle -in mcrA_all -out mcrA_all_aligned
 
 ############################################
-# STEP 2 : THE NEXT BIT #
+# STEP 2 : hmmBuild
 ############################################
