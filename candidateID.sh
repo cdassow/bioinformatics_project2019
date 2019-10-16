@@ -7,6 +7,6 @@ cat ./ref_sequences/mcrAgene_*.fasta | ../muscle -out alignedmcrA.fast
 cat ./ref_sequences/hsp70gene_*.fasta | ../muscle -out alignedhsp70.fasta
  ../hmmer3/bin/hmmbuild hsp70.hmm alignedhsp70.fasta
 echo mcrA
-for file in ./proteomes/proteome*.fasta; do echo $file; ../hmmer3/bin/hmmsearch mcrA.hmm $file | grep -E "Domain search space"; done
+for file in ./proteomes/proteome*.fasta; do echo $file; ../hmmer3/bin/hmmsearch mcrA.hmm $file | grep -E "Domain search space" | sort -t 	 -k2; done
 echo hsp70
-for file in ./proteomes/proteome*.fasta; do echo $file; ../hmmer3/bin/hmmsearch hsp70.hmm $file | grep -E "Domain search space"; done
+for file in ./proteomes/proteome*.fasta; do echo $file; ../hmmer3/bin/hmmsearch hsp70.hmm $file | grep -E "Domain search space" | sort -r | head -n 3; done
