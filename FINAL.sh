@@ -3,6 +3,7 @@
 #Assumption: tools in bioinformatics_project2019 directory
 #Convert all reference sequence files to single .fasta for both genes
 #use muscle to align sequences for two genes separately 
+#use 
 
 cat ./ref_sequences/mcrAgene_*.fasta > MCRA_combo.fasta
 ./muscle -in MCRA_combo.fasta -out MCRA.msa
@@ -17,12 +18,16 @@ tblname=$(echo $sample | sed 's/.fasta/mcrA/')
 ./hmmsearch --tblout $tblname.tbl MCRA.hmm $sample
 done
 
-for sample in proteomes/proteome*.fasta
+#for sample in proteomes/proteome*.fasta
+#do
+#tblname=$(echo $sample | sed 's/.fasta/hsp70/')
+#./hmmsearch --tblout $tblname.tbl hsp70.hmm $sample
+#done
+
+for table in proteomes/proteome_*mcrA.tbl
 do
-tblname=$(echo $sample | sed 's/.fasta/hsp70/')
-./hmmsearch --tblout $tblname.tbl hsp70.hmm $sample
+echo "$table $(cat $table | wc -l)" >> mcrAcount.txt
 done
 
-rm *.msa
-rm *.hmm
-rm *.fasta
+cat mcrAcount.txt | grep -v "13" > mcrAhits.txt
+cat mcrAhits.txt | cut -d " " -f 1 | sed 's/mcrA.tbl/.fasta/' > onestosearch.txt
