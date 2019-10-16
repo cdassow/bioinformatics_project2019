@@ -25,7 +25,6 @@ tblname=$(echo $sample | sed 's/.fasta/mcrA/')
 done
 
 
-
 #mcrA tables for each proteome have their line count measured and a list is created of the proteomes and their respective line counts
 for table in proteomes/proteome_*mcrA.tbl
 do
@@ -49,11 +48,11 @@ done
 #similarly to how it was done above, a new list of proteomes is created wherein each proteome is accompanied by its line count (more lines indicated more hsp70s)
 for file in proteomes/proteome_*hsp70.tbl
 do
-echo "$file $(cat $file | wc -l)" >> finallist.txt
+echo "$file $(cat $file | wc -l)" >> candidatelist.txt
 done
 
 
-#finallist.txt is sorted in reverse order so as to put the file with the greatest number of lines (i.e. most copies of hsp70 gene) at the top of the list
+#candidatelist.txt is sorted in reverse order so as to put the file with the greatest number of lines (i.e. most copies of hsp70 gene) at the top of the list
 #FINALLIST.txt contains isolates in descending order of the best candidates for further experimentation by Dr. Jones' grad student
 echo "The best isolates to move forward with are:" > FINALLIST.txt
-cat finallist.txt | sort -k2 -r | cut -d " " -f 1 | sed 's/proteomes\///' | sed 's/hsp70.tbl//' >> FINALLIST.txt
+cat candidatelist.txt | sort -k2 -r | cut -d " " -f 1 | sed 's/proteomes\///' | sed 's/hsp70.tbl//' >> FINALLIST.txt
