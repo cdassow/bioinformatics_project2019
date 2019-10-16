@@ -11,7 +11,7 @@
 #********************************************************************************************************************
 
 # Loop thru files in proteome directory
-for fileP in $1
+for fileP in $1/*.$2
 do
 	echo $fileP
 done
