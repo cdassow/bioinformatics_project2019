@@ -14,13 +14,11 @@ for file in ./proteomes/proteome*.fasta
  do 
  echo $file:
  ../hmmer3/bin/hmmsearch mcrA.hmm $file | grep -E "Domain search space" | tr "\n" " "
-  done
-# | sort -t ":" -k2 -b -r | head -n 5
+  done | sort -t ":" -k2 -b -r | head -n 5
 
 echo hsp70
 for file in ./proteomes/proteome*.fasta
  do
  echo $file:
  ../hmmer3/bin/hmmsearch hsp70.hmm $file | grep -E "Domain search space" | tr "\n" " "
- done
- #| sort -t ":" -k2 -b -r | head -n 5
+ done | sort -t ":" -k2 -b -r | head -n 5
