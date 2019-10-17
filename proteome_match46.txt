@@ -1,0 +1,13 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      methane.hmm
+# Target file:     ./proteomes/proteome_46.fasta
+# Option settings: ../hmmer-3.2.1/bin/hmmsearch --tblout proteome_match46.txt methane.hmm ./proteomes/proteome_46.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/msolokas/Private/bioinformatics_project2019
+# Date:            Thu Oct 17 10:40:03 2019
+# [ok]

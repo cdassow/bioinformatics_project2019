@@ -1,0 +1,15 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_015286563.1       -          alignedMethaneGenes  -                  0 1031.4   0.5         0 1031.1   0.5   1.0   1   0   0   1   1   1   1 coenzyme-B sulfoethylthiotransferase subunit alpha 
+WP_048111146.1       -          alignedMethaneGenes  -                  0 1018.9   2.8         0 1018.7   2.8   1.0   1   0   0   1   1   1   1 coenzyme-B sulfoethylthiotransferase subunit alpha 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      methane.hmm
+# Target file:     ./proteomes/proteome_19.fasta
+# Option settings: ../hmmer-3.2.1/bin/hmmsearch --tblout proteome_match19.txt methane.hmm ./proteomes/proteome_19.fasta 
+# Current dir:     /afs/crc.nd.edu/user/m/msolokas/Private/bioinformatics_project2019
+# Date:            Thu Oct 17 10:39:58 2019
+# [ok]
