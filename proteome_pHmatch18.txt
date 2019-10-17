@@ -1,0 +1,20 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_010075966.1       -          alignedpHGenes       -                  0 1010.0  32.8         0 1009.8  32.8   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_010073455.1       -          alignedpHGenes       -           7.7e-137  455.1   4.2    9e-137  454.8   4.2   1.0   1   0   0   1   1   1   1 molecular chaperone HscC 
+WP_010076109.1       -          alignedpHGenes       -           8.6e-111  369.0   7.0    2e-103  344.7   0.6   2.2   2   0   0   2   2   2   2 Hsp70 family protein 
+WP_010076108.1       -          alignedpHGenes       -            2.2e-87  291.7   5.2   2.7e-87  291.4   5.2   1.1   1   0   0   1   1   1   1 Hsp70 family protein 
+WP_010075827.1       -          alignedpHGenes       -            2.6e-15   53.6  10.2   1.7e-14   50.9  10.2   2.3   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_010076656.1       -          alignedpHGenes       -            1.5e-14   51.1   6.9   1.3e-13   48.1   6.9   2.2   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_010074858.1       -          alignedpHGenes       -             0.0006   16.1   0.0    0.0041   13.3   0.0   1.9   2   0   0   2   2   2   1 xylulokinase 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      pH.hmm
+# Target file:     ./proteomes/proteome_18.fasta
+# Option settings: ../hmmer-3.2.1/bin/hmmsearch --tblout proteome_pHmatch18.txt pH.hmm ./proteomes/proteome_18.fasta 
+# Current dir:     /afs/crc.nd.edu/user/f/ftaylor/Private/bioinformatics_project2019
+# Date:            Thu Oct 17 18:11:09 2019
+# [ok]

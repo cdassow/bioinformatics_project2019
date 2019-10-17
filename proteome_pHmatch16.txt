@@ -1,0 +1,14 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_012037073.1       -          alignedpHGenes       -                  0 1048.2  25.8         0 1048.0  25.8   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      pH.hmm
+# Target file:     ./proteomes/proteome_16.fasta
+# Option settings: ../hmmer-3.2.1/bin/hmmsearch --tblout proteome_pHmatch16.txt pH.hmm ./proteomes/proteome_16.fasta 
+# Current dir:     /afs/crc.nd.edu/user/f/ftaylor/Private/bioinformatics_project2019
+# Date:            Thu Oct 17 18:11:09 2019
+# [ok]

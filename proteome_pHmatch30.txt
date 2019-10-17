@@ -1,0 +1,15 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_062007832.1       -          alignedpHGenes       -           4.7e-259  858.5  25.7  5.2e-259  858.3  25.7   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_062006723.1       -          alignedpHGenes       -               0.23    7.3   5.6     0.082    8.8   3.0   1.6   2   0   0   2   2   2   0 DUF349 domain-containing protein 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      pH.hmm
+# Target file:     ./proteomes/proteome_30.fasta
+# Option settings: ../hmmer-3.2.1/bin/hmmsearch --tblout proteome_pHmatch30.txt pH.hmm ./proteomes/proteome_30.fasta 
+# Current dir:     /afs/crc.nd.edu/user/f/ftaylor/Private/bioinformatics_project2019
+# Date:            Thu Oct 17 18:11:10 2019
+# [ok]

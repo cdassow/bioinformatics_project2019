@@ -1,0 +1,16 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_048118742.1       -          alignedpHGenes       -                  0 1092.8  23.9         0 1092.6  23.9   1.0   1   0   0   1   1   1   1 MULTISPECIES: molecular chaperone DnaK 
+WP_048116754.1       -          alignedpHGenes       -           1.2e-109  365.0   9.0  3.7e-100  333.6   3.7   2.0   2   0   0   2   2   2   2 MULTISPECIES: hypothetical protein 
+WP_048116752.1       -          alignedpHGenes       -           1.7e-106  354.5  13.6   2.4e-99  330.9   6.5   2.0   2   0   0   2   2   2   2 MULTISPECIES: Hsp70 family protein 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      pH.hmm
+# Target file:     ./proteomes/proteome_45.fasta
+# Option settings: ../hmmer-3.2.1/bin/hmmsearch --tblout proteome_pHmatch45.txt pH.hmm ./proteomes/proteome_45.fasta 
+# Current dir:     /afs/crc.nd.edu/user/f/ftaylor/Private/bioinformatics_project2019
+# Date:            Thu Oct 17 18:11:12 2019
+# [ok]

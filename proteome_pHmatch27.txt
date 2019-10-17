@@ -1,0 +1,15 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_004214171.1       -          alignedpHGenes       -                  0 1039.5  28.6         0 1039.1  28.6   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_004268047.1       -          alignedpHGenes       -                3.6    3.6  15.8       3.9    3.4  15.8   1.0   1   0   0   1   1   1   0 V-type ATP synthase subunit H 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      pH.hmm
+# Target file:     ./proteomes/proteome_27.fasta
+# Option settings: ../hmmer-3.2.1/bin/hmmsearch --tblout proteome_pHmatch27.txt pH.hmm ./proteomes/proteome_27.fasta 
+# Current dir:     /afs/crc.nd.edu/user/f/ftaylor/Private/bioinformatics_project2019
+# Date:            Thu Oct 17 18:11:10 2019
+# [ok]
