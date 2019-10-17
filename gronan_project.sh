@@ -19,7 +19,7 @@ for fileP in $1/*.$2 # Ayyyyyy it works!!!
 do
 	echo "Looping for $fileP"
 	# Should activate muscle for each proteome file sequentially with outnames <temp_m_filename>
-	echo $fileP | xargs ../bin/muscle3.3.31 -out temp_m_$(echo $fileP | rev | cut -d "/" -f 1 | \
-	     rev | cut -d "." -f 1).txt
+	#echo $fileP | xargs ../bin/muscle3.3.31 -out temp_m_$(echo $fileP | rev | cut -d "/" -f 1 | \
+	#     rev | cut -d "." -f 1).txt
 	echo temp_m_$(echo $fileP | rev | cut -d "/" -f 1 | rev | cut -d "." -f 1).txt
 done
