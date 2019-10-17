@@ -15,11 +15,10 @@
 
 # Loop thru files in proteome directory
 echo "Starting loop"
-for fileP in $1/*.$2 # Ayyyyyy it works!!!
+for fileP in $1/*.$2 # Loop through all files in specified directory with specified extension
 do
-	echo "Looping for $fileP"
-	# Should activate muscle for each proteome file sequentially with outnames <temp_m_filename>
-	#echo $fileP | xargs ../bin/muscle3.3.31 -out temp_m_$(echo $fileP | rev | cut -d "/" -f 1 | \
-	#     rev | cut -d "." -f 1).txt
-	echo temp_m_$(echo $fileP | rev | cut -d "/" -f 1 | rev | cut -d "." -f 1).txt
+	filename=$(echo $fileP | rev | cut -d "/" -f 1 | rev | cut -d "." -f 1)
+	# Should activate muscle for each proteome file sequentially with outnames temp_m_<filename>.txt
+	#echo $fileP | xargs ../bin/muscle3.3.31 > temp_m_$filename.txt
+	echo temp_m_$filename.txt
 done
