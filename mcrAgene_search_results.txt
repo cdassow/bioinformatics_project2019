@@ -5,7 +5,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # query HMM file:                  mcrAgene.hmm
 # target sequence database:        ./proteomes/proteome_combined.fasta
-# output directed to file:         mcragene.txt
+# output directed to file:         mcrAgene_search_results.txt
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 Query:       mcrAgene  [M=558]
@@ -13,34 +13,34 @@ Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
     ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
-          0 1121.8   3.9          0 1121.7   3.9    1.0  1  WP_011033189.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1115.3   2.5          0 1115.1   2.5    1.0  1  WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
-          0 1115.3   2.5          0 1115.1   2.5    1.0  1  WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
-          0 1115.3   2.5          0 1115.1   2.5    1.0  1  WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
-          0 1115.3   2.5          0 1115.1   2.5    1.0  1  WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
-          0 1084.8   0.2          0 1084.6   0.2    1.0  1  WP_013099697.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1059.0   3.1          0 1058.8   3.1    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1059.0   3.1          0 1058.8   3.1    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1059.0   3.1          0 1058.8   3.1    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1059.0   3.1          0 1058.8   3.1    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1059.0   3.1          0 1058.8   3.1    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1052.8   2.1          0 1052.6   2.1    1.0  1  WP_011954235.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
-          0 1029.7   0.4          0 1029.5   0.4    1.0  1  WP_015286563.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1025.7   1.3          0 1025.6   1.3    1.0  1  WP_011972678.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1019.2   0.1          0 1019.0   0.1    1.0  1  WP_011449112.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1017.4   2.7          0 1017.2   2.7    1.0  1  WP_048111146.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1015.8   0.1          0 1015.6   0.1    1.0  1  WP_012106121.1  coenzyme-B sulfoethylthiotransferase subunit 
-          0 1015.0   0.6          0 1014.8   0.6    1.0  1  WP_011954158.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
+          0 1123.6   4.0          0 1123.4   4.0    1.0  1  WP_011033189.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1117.1   2.5          0 1116.9   2.5    1.0  1  WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
+          0 1117.1   2.5          0 1116.9   2.5    1.0  1  WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
+          0 1117.1   2.5          0 1116.9   2.5    1.0  1  WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
+          0 1117.1   2.5          0 1116.9   2.5    1.0  1  WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
+          0 1086.0   0.2          0 1085.8   0.2    1.0  1  WP_013099697.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1060.5   3.2          0 1060.3   3.2    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1060.5   3.2          0 1060.3   3.2    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1060.5   3.2          0 1060.3   3.2    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1060.5   3.2          0 1060.3   3.2    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1060.5   3.2          0 1060.3   3.2    1.0  1  WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1054.1   2.2          0 1054.0   2.2    1.0  1  WP_011954235.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
+          0 1030.6   0.5          0 1030.4   0.5    1.0  1  WP_015286563.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1026.0   1.3          0 1025.8   1.3    1.0  1  WP_011972678.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1020.2   0.1          0 1020.0   0.1    1.0  1  WP_011449112.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1018.1   2.8          0 1017.9   2.8    1.0  1  WP_048111146.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1017.0   0.1          0 1016.8   0.1    1.0  1  WP_012106121.1  coenzyme-B sulfoethylthiotransferase subunit 
+          0 1016.3   0.6          0 1016.1   0.6    1.0  1  WP_011954158.1  MULTISPECIES: coenzyme-B sulfoethylthiotransf
 
 
 Domain annotation for each sequence (and alignments):
 >> WP_011033189.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1121.7   3.9         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
+   1 ! 1123.4   4.0         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1121.7 bits;  conditional E-value: 0
+  == domain 1  score: 1123.4 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeee.........ditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvhaGvplGqralmpykvsgtdivv 87 
                      ++++++kf+k++++kf++e         dit kt+kf+rlg+ +q+ark+e++ka+keiaekrGia+ynp++h+G+plGqra++py++sgtdiv+
   WP_011033189.1   2 AADIFSKFKKSMEVKFTQEygsnqqaggDITGKTAKFLRLGP-EQDARKAEMIKAGKEIAEKRGIAFYNPMMHSGAPLGQRAITPYTLSGTDIVA 95 
@@ -56,10 +56,10 @@ Domain annotation for each sequence (and alignments):
   WP_011033189.1 191 DKQYVININKMFSEEQAAQIKASMGKTTWQAIHIPTIVSRTTDGAQTSRWAAMQIGMSFISAYAMCAGEAAVADLSFAAKHAALVSMGEMLPARR 285
                      *********************************************************************************************** PP
 
-        mcrAgene 278 argpnepGGlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaev.. 370
-                     argpnepGGlsfG+ladi+qtsrv s+dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild++tyydvdyi+dky+g+a+   
-  WP_011033189.1 286 ARGPNEPGGLSFGHLADIIQTSRV-SQDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNTYYDVDYINDKYNGAANLgt 379
-                     ************************.9****************************************************************99999 PP
+        mcrAgene 278 argpnepGGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaev.. 370
+                     argpnepGGlsfG+ladi+qtsrvs +dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild++tyydvdyi+dky+g+a+   
+  WP_011033189.1 286 ARGPNEPGGLSFGHLADIIQTSRVS-QDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNTYYDVDYINDKYNGAANLgt 379
+                     *************************.*****************************************************************9999 PP
 
         mcrAgene 371 ...vkatldvvkdiatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGa 462
                         vkatldvvkdiate+tly++e+yek+p++ledhfGGsqratvlaaa+Gva+alatgnanaGlsgwylsm++hkea++rlGffG+dlqdqcGa
@@ -79,10 +79,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1115.1   2.5         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
+   1 ! 1116.9   2.5         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1115.1 bits;  conditional E-value: 0
+  == domain 1  score: 1116.9 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeee.........ditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvhaGvplGqralmpykvsgtdivv 87 
                      ++++++kf+k++++kf++e         dit kt+kf+rlg+ +q++rk+e++ka+keiaekrGi++ynp++h+G+plGqra++py++sgtdiv+
   WP_048120720.1   2 AADIFSKFKKDMEVKFAQEfgankqtggDITGKTEKFLRLGP-EQDPRKVEMIKAGKEIAEKRGISFYNPMMHSGAPLGQRAITPYTISGTDIVA 95 
@@ -98,10 +98,10 @@ Domain annotation for each sequence (and alignments):
   WP_048120720.1 191 DKQYLIDINKEFSEEQAAQIKASIGKTSWQAIHIPTIVSRTTDGAQTTRWAAMQIGMSFISAYAMCAGEAAVADLSFAAKHAAAVSMGEMLPARR 285
                      *********************************************************************************************** PP
 
-        mcrAgene 278 argpnepGGlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaev.. 370
-                     argpnepGGlsfG+l+di+qtsrv s+dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild+++yydvdyi+dky+g+a+v  
-  WP_048120720.1 286 ARGPNEPGGLSFGHLSDIIQTSRV-SKDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNVYYDVDYINDKYNGAANVgk 379
-                     ************************.9******************************************************************999 PP
+        mcrAgene 278 argpnepGGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaev.. 370
+                     argpnepGGlsfG+l+di+qtsrvs +dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild+++yydvdyi+dky+g+a+v  
+  WP_048120720.1 286 ARGPNEPGGLSFGHLSDIIQTSRVS-KDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNVYYDVDYINDKYNGAANVgk 379
+                     *************************.9*****************************************************************999 PP
 
         mcrAgene 371 ...vkatldvvkdiatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGa 462
                         vka+ldvvkdiate+tly++e+yek+p++ledhfGGsqratvlaaaaGva++lat+nanaGlsgwylsm+lhkea++rlGffG+dlqdqcGa
@@ -121,10 +121,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1115.1   2.5         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
+   1 ! 1116.9   2.5         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1115.1 bits;  conditional E-value: 0
+  == domain 1  score: 1116.9 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeee.........ditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvhaGvplGqralmpykvsgtdivv 87 
                      ++++++kf+k++++kf++e         dit kt+kf+rlg+ +q++rk+e++ka+keiaekrGi++ynp++h+G+plGqra++py++sgtdiv+
   WP_048120720.1   2 AADIFSKFKKDMEVKFAQEfgankqtggDITGKTEKFLRLGP-EQDPRKVEMIKAGKEIAEKRGISFYNPMMHSGAPLGQRAITPYTISGTDIVA 95 
@@ -140,10 +140,10 @@ Domain annotation for each sequence (and alignments):
   WP_048120720.1 191 DKQYLIDINKEFSEEQAAQIKASIGKTSWQAIHIPTIVSRTTDGAQTTRWAAMQIGMSFISAYAMCAGEAAVADLSFAAKHAAAVSMGEMLPARR 285
                      *********************************************************************************************** PP
 
-        mcrAgene 278 argpnepGGlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaev.. 370
-                     argpnepGGlsfG+l+di+qtsrv s+dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild+++yydvdyi+dky+g+a+v  
-  WP_048120720.1 286 ARGPNEPGGLSFGHLSDIIQTSRV-SKDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNVYYDVDYINDKYNGAANVgk 379
-                     ************************.9******************************************************************999 PP
+        mcrAgene 278 argpnepGGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaev.. 370
+                     argpnepGGlsfG+l+di+qtsrvs +dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild+++yydvdyi+dky+g+a+v  
+  WP_048120720.1 286 ARGPNEPGGLSFGHLSDIIQTSRVS-KDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNVYYDVDYINDKYNGAANVgk 379
+                     *************************.9*****************************************************************999 PP
 
         mcrAgene 371 ...vkatldvvkdiatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGa 462
                         vka+ldvvkdiate+tly++e+yek+p++ledhfGGsqratvlaaaaGva++lat+nanaGlsgwylsm+lhkea++rlGffG+dlqdqcGa
@@ -163,10 +163,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1115.1   2.5         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
+   1 ! 1116.9   2.5         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1115.1 bits;  conditional E-value: 0
+  == domain 1  score: 1116.9 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeee.........ditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvhaGvplGqralmpykvsgtdivv 87 
                      ++++++kf+k++++kf++e         dit kt+kf+rlg+ +q++rk+e++ka+keiaekrGi++ynp++h+G+plGqra++py++sgtdiv+
   WP_048120720.1   2 AADIFSKFKKDMEVKFAQEfgankqtggDITGKTEKFLRLGP-EQDPRKVEMIKAGKEIAEKRGISFYNPMMHSGAPLGQRAITPYTISGTDIVA 95 
@@ -182,10 +182,10 @@ Domain annotation for each sequence (and alignments):
   WP_048120720.1 191 DKQYLIDINKEFSEEQAAQIKASIGKTSWQAIHIPTIVSRTTDGAQTTRWAAMQIGMSFISAYAMCAGEAAVADLSFAAKHAAAVSMGEMLPARR 285
                      *********************************************************************************************** PP
 
-        mcrAgene 278 argpnepGGlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaev.. 370
-                     argpnepGGlsfG+l+di+qtsrv s+dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild+++yydvdyi+dky+g+a+v  
-  WP_048120720.1 286 ARGPNEPGGLSFGHLSDIIQTSRV-SKDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNVYYDVDYINDKYNGAANVgk 379
-                     ************************.9******************************************************************999 PP
+        mcrAgene 278 argpnepGGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaev.. 370
+                     argpnepGGlsfG+l+di+qtsrvs +dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild+++yydvdyi+dky+g+a+v  
+  WP_048120720.1 286 ARGPNEPGGLSFGHLSDIIQTSRVS-KDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNVYYDVDYINDKYNGAANVgk 379
+                     *************************.9*****************************************************************999 PP
 
         mcrAgene 371 ...vkatldvvkdiatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGa 462
                         vka+ldvvkdiate+tly++e+yek+p++ledhfGGsqratvlaaaaGva++lat+nanaGlsgwylsm+lhkea++rlGffG+dlqdqcGa
@@ -205,10 +205,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_048120720.1  MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1115.1   2.5         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
+   1 ! 1116.9   2.5         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1115.1 bits;  conditional E-value: 0
+  == domain 1  score: 1116.9 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeee.........ditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvhaGvplGqralmpykvsgtdivv 87 
                      ++++++kf+k++++kf++e         dit kt+kf+rlg+ +q++rk+e++ka+keiaekrGi++ynp++h+G+plGqra++py++sgtdiv+
   WP_048120720.1   2 AADIFSKFKKDMEVKFAQEfgankqtggDITGKTEKFLRLGP-EQDPRKVEMIKAGKEIAEKRGISFYNPMMHSGAPLGQRAITPYTISGTDIVA 95 
@@ -224,10 +224,10 @@ Domain annotation for each sequence (and alignments):
   WP_048120720.1 191 DKQYLIDINKEFSEEQAAQIKASIGKTSWQAIHIPTIVSRTTDGAQTTRWAAMQIGMSFISAYAMCAGEAAVADLSFAAKHAAAVSMGEMLPARR 285
                      *********************************************************************************************** PP
 
-        mcrAgene 278 argpnepGGlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaev.. 370
-                     argpnepGGlsfG+l+di+qtsrv s+dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild+++yydvdyi+dky+g+a+v  
-  WP_048120720.1 286 ARGPNEPGGLSFGHLSDIIQTSRV-SKDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNVYYDVDYINDKYNGAANVgk 379
-                     ************************.9******************************************************************999 PP
+        mcrAgene 278 argpnepGGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaev.. 370
+                     argpnepGGlsfG+l+di+qtsrvs +dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild+++yydvdyi+dky+g+a+v  
+  WP_048120720.1 286 ARGPNEPGGLSFGHLSDIIQTSRVS-KDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNVYYDVDYINDKYNGAANVgk 379
+                     *************************.9*****************************************************************999 PP
 
         mcrAgene 371 ...vkatldvvkdiatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGa 462
                         vka+ldvvkdiate+tly++e+yek+p++ledhfGGsqratvlaaaaGva++lat+nanaGlsgwylsm+lhkea++rlGffG+dlqdqcGa
@@ -247,10 +247,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_013099697.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1084.6   0.2         0         0       3     558 .]       2     553 .]       1     553 [] 0.99
+   1 ! 1085.8   0.2         0         0       3     558 .]       2     553 .]       1     553 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1084.6 bits;  conditional E-value: 0
+  == domain 1  score: 1085.8 bits;  conditional E-value: 0
         mcrAgene   3 eeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekr.GialynpdvhaGvplGqralmpykvsgtdivvegddlhfvn 96 
                      e+ek++flkalk+kfee d++ek+tkfy +ggw+qsark+e+v+aa++++ekr Gi++ynpd+  GvplGqr+lmpykvs+td +vegddlhf+n
   WP_013099697.1   2 EAEKRLFLKALKEKFEE-DPREKYTKFYIFGGWRQSARKREFVEAAQKLIEKRgGIPFYNPDI--GVPLGQRKLMPYKVSNTDAIVEGDDLHFMN 93 
@@ -266,10 +266,10 @@ Domain annotation for each sequence (and alignments):
   WP_013099697.1 189 KLFPEEQAEQIKKAIGKRTYQVSRVPTLVGRVCDGGTIARWSAMQIGMSFITAYKLCAGEAAIADFSYAAKHADVIQMATFLPARRARGPNEPGG 283
                      *********************************************************************************************** PP
 
-        mcrAgene 287 lsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvkdi 381
-                     + fGvlad+vqt+rv sddp+++slevvaaga+l+dqiwlGsymsGGvGftqyata+ytddilddf+yy++dyi++kygg+++ vk+t+dvv+di
-  WP_013099697.1 284 MYFGVLADVVQTTRV-SDDPVEQSLEVVAAGAALFDQIWLGSYMSGGVGFTQYATASYTDDILDDFSYYGYDYINKKYGGCNS-VKPTMDVVEDI 376
-                     ***************.*****************************************************************99.*********** PP
+        mcrAgene 287 lsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvkdi 381
+                     + fGvlad+vqt+rvs ddp+++slevvaaga+l+dqiwlGsymsGGvGftqyata+ytddilddf+yy++dyi++ky+g+++ vk+t+dvv+di
+  WP_013099697.1 284 MYFGVLADVVQTTRVS-DDPVEQSLEVVAAGAALFDQIWLGSYMSGGVGFTQYATASYTDDILDDFSYYGYDYINKKYGGCNS-VKPTMDVVEDI 376
+                     ****************.*************************************************************99999.*********** PP
 
         mcrAgene 382 atevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdeglpl 476
                      atevtlyaleqy++ypalledhfGGsqra+v+aaa+G+++alatgn+naGl+gwyls++lhke+hsrlGf+GydlqdqcGaan+ls+r+deg+pl
@@ -284,10 +284,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1058.8   3.1         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
+   1 ! 1060.3   3.2         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1058.8 bits;  conditional E-value: 0
+  == domain 1  score: 1060.3 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvha.GvplGqralmpykvsgtdivvegddlhfv 95 
                      v+e++k+f+ka+kkkf+e ++t + tkf+ + g++qs+rk+e++k++  ia+krGi++ynp+vh+ G+plGqr+lm+y vsgtdi vegddlhfv
   WP_012035370.1   3 VKETQKRFIKAMKKKFAE-EPTAQVTKFK-YEGYTQSKRKVEFKKTGDAIAKKRGISMYNPMVHMgGIPLGQRQLMNYVVSGTDIAVEGDDLHFV 95 
@@ -303,10 +303,10 @@ Domain annotation for each sequence (and alignments):
   WP_012035370.1 191 NKAFPKEQAAQLKKAIGKQLFQAVHIPTIVVRTCDGGTTSRWSAMQIGMSFIDAYKMCAGEAAVADLAFAAKHASVVEMGNLLPARRARGPNEPG 285
                      *********************************************************************************************** PP
 
-        mcrAgene 286 GlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvkd 380
-                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ kyg ++  +k+t+dvv+d
-  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKYGIAK--AKPTMDVVND 378
-                     *******************************************************************************9555..5********* PP
+        mcrAgene 286 GlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvkd 380
+                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ ky g+a+ +k+t+dvv+d
+  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKY-GIAK-AKPTMDVVND 378
+                     *******************************************************************************.7887.8********* PP
 
         mcrAgene 381 iatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdeglp 475
                      i+tevtly++eqyekyp+ ledhfGGsqratvl+aaaGv+t+latgnanaGls+wylsm+lhkea++rlGffGydlqdqcGa+nv+s rsdeg++
@@ -321,10 +321,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1058.8   3.1         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
+   1 ! 1060.3   3.2         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1058.8 bits;  conditional E-value: 0
+  == domain 1  score: 1060.3 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvha.GvplGqralmpykvsgtdivvegddlhfv 95 
                      v+e++k+f+ka+kkkf+e ++t + tkf+ + g++qs+rk+e++k++  ia+krGi++ynp+vh+ G+plGqr+lm+y vsgtdi vegddlhfv
   WP_012035370.1   3 VKETQKRFIKAMKKKFAE-EPTAQVTKFK-YEGYTQSKRKVEFKKTGDAIAKKRGISMYNPMVHMgGIPLGQRQLMNYVVSGTDIAVEGDDLHFV 95 
@@ -340,10 +340,10 @@ Domain annotation for each sequence (and alignments):
   WP_012035370.1 191 NKAFPKEQAAQLKKAIGKQLFQAVHIPTIVVRTCDGGTTSRWSAMQIGMSFIDAYKMCAGEAAVADLAFAAKHASVVEMGNLLPARRARGPNEPG 285
                      *********************************************************************************************** PP
 
-        mcrAgene 286 GlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvkd 380
-                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ kyg ++  +k+t+dvv+d
-  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKYGIAK--AKPTMDVVND 378
-                     *******************************************************************************9555..5********* PP
+        mcrAgene 286 GlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvkd 380
+                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ ky g+a+ +k+t+dvv+d
+  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKY-GIAK-AKPTMDVVND 378
+                     *******************************************************************************.7887.8********* PP
 
         mcrAgene 381 iatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdeglp 475
                      i+tevtly++eqyekyp+ ledhfGGsqratvl+aaaGv+t+latgnanaGls+wylsm+lhkea++rlGffGydlqdqcGa+nv+s rsdeg++
@@ -358,10 +358,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1058.8   3.1         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
+   1 ! 1060.3   3.2         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1058.8 bits;  conditional E-value: 0
+  == domain 1  score: 1060.3 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvha.GvplGqralmpykvsgtdivvegddlhfv 95 
                      v+e++k+f+ka+kkkf+e ++t + tkf+ + g++qs+rk+e++k++  ia+krGi++ynp+vh+ G+plGqr+lm+y vsgtdi vegddlhfv
   WP_012035370.1   3 VKETQKRFIKAMKKKFAE-EPTAQVTKFK-YEGYTQSKRKVEFKKTGDAIAKKRGISMYNPMVHMgGIPLGQRQLMNYVVSGTDIAVEGDDLHFV 95 
@@ -377,10 +377,10 @@ Domain annotation for each sequence (and alignments):
   WP_012035370.1 191 NKAFPKEQAAQLKKAIGKQLFQAVHIPTIVVRTCDGGTTSRWSAMQIGMSFIDAYKMCAGEAAVADLAFAAKHASVVEMGNLLPARRARGPNEPG 285
                      *********************************************************************************************** PP
 
-        mcrAgene 286 GlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvkd 380
-                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ kyg ++  +k+t+dvv+d
-  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKYGIAK--AKPTMDVVND 378
-                     *******************************************************************************9555..5********* PP
+        mcrAgene 286 GlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvkd 380
+                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ ky g+a+ +k+t+dvv+d
+  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKY-GIAK-AKPTMDVVND 378
+                     *******************************************************************************.7887.8********* PP
 
         mcrAgene 381 iatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdeglp 475
                      i+tevtly++eqyekyp+ ledhfGGsqratvl+aaaGv+t+latgnanaGls+wylsm+lhkea++rlGffGydlqdqcGa+nv+s rsdeg++
@@ -395,10 +395,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1058.8   3.1         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
+   1 ! 1060.3   3.2         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1058.8 bits;  conditional E-value: 0
+  == domain 1  score: 1060.3 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvha.GvplGqralmpykvsgtdivvegddlhfv 95 
                      v+e++k+f+ka+kkkf+e ++t + tkf+ + g++qs+rk+e++k++  ia+krGi++ynp+vh+ G+plGqr+lm+y vsgtdi vegddlhfv
   WP_012035370.1   3 VKETQKRFIKAMKKKFAE-EPTAQVTKFK-YEGYTQSKRKVEFKKTGDAIAKKRGISMYNPMVHMgGIPLGQRQLMNYVVSGTDIAVEGDDLHFV 95 
@@ -414,10 +414,10 @@ Domain annotation for each sequence (and alignments):
   WP_012035370.1 191 NKAFPKEQAAQLKKAIGKQLFQAVHIPTIVVRTCDGGTTSRWSAMQIGMSFIDAYKMCAGEAAVADLAFAAKHASVVEMGNLLPARRARGPNEPG 285
                      *********************************************************************************************** PP
 
-        mcrAgene 286 GlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvkd 380
-                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ kyg ++  +k+t+dvv+d
-  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKYGIAK--AKPTMDVVND 378
-                     *******************************************************************************9555..5********* PP
+        mcrAgene 286 GlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvkd 380
+                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ ky g+a+ +k+t+dvv+d
+  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKY-GIAK-AKPTMDVVND 378
+                     *******************************************************************************.7887.8********* PP
 
         mcrAgene 381 iatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdeglp 475
                      i+tevtly++eqyekyp+ ledhfGGsqratvl+aaaGv+t+latgnanaGls+wylsm+lhkea++rlGffGydlqdqcGa+nv+s rsdeg++
@@ -432,10 +432,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_012035370.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1058.8   3.1         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
+   1 ! 1060.3   3.2         0         0       2     558 .]       3     556 .]       2     556 .] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1058.8 bits;  conditional E-value: 0
+  == domain 1  score: 1060.3 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvha.GvplGqralmpykvsgtdivvegddlhfv 95 
                      v+e++k+f+ka+kkkf+e ++t + tkf+ + g++qs+rk+e++k++  ia+krGi++ynp+vh+ G+plGqr+lm+y vsgtdi vegddlhfv
   WP_012035370.1   3 VKETQKRFIKAMKKKFAE-EPTAQVTKFK-YEGYTQSKRKVEFKKTGDAIAKKRGISMYNPMVHMgGIPLGQRQLMNYVVSGTDIAVEGDDLHFV 95 
@@ -451,10 +451,10 @@ Domain annotation for each sequence (and alignments):
   WP_012035370.1 191 NKAFPKEQAAQLKKAIGKQLFQAVHIPTIVVRTCDGGTTSRWSAMQIGMSFIDAYKMCAGEAAVADLAFAAKHASVVEMGNLLPARRARGPNEPG 285
                      *********************************************************************************************** PP
 
-        mcrAgene 286 GlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvkd 380
-                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ kyg ++  +k+t+dvv+d
-  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKYGIAK--AKPTMDVVND 378
-                     *******************************************************************************9555..5********* PP
+        mcrAgene 286 GlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvkd 380
+                     G+sfG+ladivqt r+++ddp+k+sle+va+g+mlydqiwlGsymsGGvGftqyataaytddilddf yy++dyi+ ky g+a+ +k+t+dvv+d
+  WP_012035370.1 286 GVSFGFLADIVQTHRKYPDDPVKSSLETVASGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDDFCYYGYDYIKGKY-GIAK-AKPTMDVVND 378
+                     *******************************************************************************.7887.8********* PP
 
         mcrAgene 381 iatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdeglp 475
                      i+tevtly++eqyekyp+ ledhfGGsqratvl+aaaGv+t+latgnanaGls+wylsm+lhkea++rlGffGydlqdqcGa+nv+s rsdeg++
@@ -469,10 +469,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_011954235.1  MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1052.6   2.1         0         0       5     558 .]       2     551 .]       1     551 [] 1.00
+   1 ! 1054.0   2.2         0         0       5     558 .]       2     551 .]       1     551 [] 1.00
 
   Alignments for each domain:
-  == domain 1  score: 1052.6 bits;  conditional E-value: 0
+  == domain 1  score: 1054.0 bits;  conditional E-value: 0
         mcrAgene   5 ekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvhaGvplGqralmpykvsgtdivvegddlhfvnnaa 99 
                      ++kkfl+a+k+kf+e  +t+k+t+fy++ggwkqs+rk  +vk++keiaekrGi++ynpd+  G+plGqralm+y++s+td++vegddlhf+nnaa
   WP_011954235.1   2 ADKKFLDAMKNKFSE-GPTDKRTTFYNMGGWKQSERKSAFVKEGKEIAEKRGIPMYNPDI--GTPLGQRALMSYQLSTTDTYVEGDDLHFINNAA 93 
@@ -488,8 +488,8 @@ Domain annotation for each sequence (and alignments):
   WP_011954235.1 189 NEEQAAALKEEVGGSVWQAVRIPAIVGRVCDGGTTSRWSAMQIGMSMISAYNQCAGEGATGDFAYASKHAEVIHMGTYLPVRRARAENELGGVPF 283
                      *********************************************************************************************** PP
 
-        mcrAgene 290 GvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvkdiate 384
-                     G++adi+q+srv++ddp++++l+vva ga+lydqiwlGsymsGGvGftqyataaytdd+lddftyy++dy+edkyggl+e +++++d+v d+++e
+        mcrAgene 290 GvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvkdiate 384
+                     G++adi+q+srv+addp++++l+vva ga+lydqiwlGsymsGGvGftqyataaytdd+lddftyy++dy+edky+gl+e +++++d+v d+++e
   WP_011954235.1 284 GFMADICQSSRVNADDPVRSTLDVVALGAALYDQIWLGSYMSGGVGFTQYATAAYTDDVLDDFTYYGKDYVEDKYGGLTE-APNNMDTVLDVGSE 377
                      ********************************************************************************.9************* PP
 
@@ -506,10 +506,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_015286563.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1029.5   0.4         0         0       2     558 .]       7     562 .]       6     562 .] 0.99
+   1 ! 1030.4   0.5         0         0       2     558 .]       7     562 .]       6     562 .] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1029.5 bits;  conditional E-value: 0
+  == domain 1  score: 1030.4 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpd.vha.GvplGqralmpykvsgtdivvegddlhf 94 
                      +e+++k+flka+k+kf+e d++ + t f+r g  +qs+rk+e+vka+k  +++rGi++y+p   h+ G+plGqr+lm+y++s+t ++vegdd hf
   WP_015286563.1   7 IERTQKLFLKAMKEKFAE-DPQAQATVFKREGL-SQSPRKMEFVKAGKAAEMDRGISMYDPArCHCgGIPLGQRQLMTYEISSTGVFVEGDDCHF 99 
@@ -525,10 +525,10 @@ Domain annotation for each sequence (and alignments):
   WP_015286563.1 195 VDKLFPAKQAAQLKAAVGKSMWQAVHIPTIVSRTCDGGTTSRWSAMQIGMSFIGAYKMCAGEAAVADLAFAAKHAGVIQMADILPARRARGPNEP 289
                      *********************************************************************************************** PP
 
-        mcrAgene 285 GGlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvk 379
-                     GG++fG++ad++q++r++++dp+++slevva g+ml+dqiwlGsymsGGvGftqyataaytd+ilddft y+vdy+++k+g l + vkat dvv+
+        mcrAgene 285 GGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvk 379
+                     GG++fG++ad++q++r++++dp+++slevva g+ml+dqiwlGsymsGGvGftqyataaytd+ilddft y+vdy+++k++ l + vkat dvv+
   WP_015286563.1 290 GGIKFGHFADMIQSDRKYPNDPVRASLEVVAGGCMLFDQIWLGSYMSGGVGFTQYATAAYTDNILDDFTSYGVDYVKKKHGALGK-VKATQDVVN 383
-                     *********************************************************************************9998.********* PP
+                     *******************************************************************************977666.********* PP
 
         mcrAgene 380 diatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdegl 474
                      dia+evtly++eqye++p+ le hfGGsqratvlaaa+Gv+talat+n+naGl+gwy+sml+hkea+srlGffGydlqdqcG+an++s+r degl
@@ -543,10 +543,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_011972678.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1025.6   1.3         0         0       3     558 .]       2     553 .]       1     553 [] 0.99
+   1 ! 1025.8   1.3         0         0       3     558 .]       2     553 .]       1     553 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1025.6 bits;  conditional E-value: 0
+  == domain 1  score: 1025.8 bits;  conditional E-value: 0
         mcrAgene   3 eeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakei.aekr.GialynpdvhaGvplGqralmpykvsgtdivvegddlhfv 95 
                      e+ek++flkalk+kfee d++ek+tkfy++ggw+qsark+e+v a +++ aekr G++lynpd+  GvplGqr+lmpyk+sgtd ++egddlhf+
   WP_011972678.1   2 EAEKRLFLKALKEKFEE-DPKEKYTKFYTYGGWEQSARKREFVAANEKVlAEKRqGVPLYNPDI--GVPLGQRKLMPYKLSGTDSYCEGDDLHFM 93 
@@ -562,10 +562,10 @@ Domain annotation for each sequence (and alignments):
   WP_011972678.1 189 NKLFPAEQAEALKKAIGKKTYQVSRVPSLVGRVCDGGTISRWSAMQIGMSFITAYKLCAGEAATADFSYASKHADVIQMGNALPGRRARGPNEPG 283
                      *********************************************************************************************** PP
 
-        mcrAgene 286 GlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvkd 380
-                     G++fG+l+d+vqt+rv sddp+++slevvaaga+lydqiwlG+ymsGGvGftqyataaytddilddf+yy+ dy+e+kyg + +  kat+dvv+d
-  WP_011972678.1 284 GIQFGILSDVVQTTRV-SDDPVEQSLEVVAAGAALYDQIWLGAYMSGGVGFTQYATAAYTDDILDDFSYYALDYVEKKYGRMGT--KATMDVVED 375
-                     ****************.***************************************************************9998..9******** PP
+        mcrAgene 286 GlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvkd 380
+                     G++fG+l+d+vqt+rvs ddp+++slevvaaga+lydqiwlG+ymsGGvGftqyataaytddilddf+yy+ dy+e+ky+ + +  kat+dvv+d
+  WP_011972678.1 284 GIQFGILSDVVQTTRVS-DDPVEQSLEVVAAGAALYDQIWLGAYMSGGVGFTQYATAAYTDDILDDFSYYALDYVEKKYGRMGT--KATMDVVED 375
+                     *****************.*************************************************************77766..9******** PP
 
         mcrAgene 381 iatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdeglp 475
                      ia+evtly+leqy++ypalledhfGGsqra+v aaa+G+ +++atgn+naG++gwyls++lhke+hsrlGf+GydlqdqcGa+n+l++r+de++p
@@ -580,10 +580,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_011449112.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1019.0   0.1         0         0       2     558 .]       4     567 .]       3     567 .] 0.99
+   1 ! 1020.0   0.1         0         0       2     558 .]       4     567 .]       3     567 .] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1019.0 bits;  conditional E-value: 0
+  == domain 1  score: 1020.0 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpd.vha.GvplGqralmpykvsgtdivvegddlhf 94 
                      +e+++k+flkalk+kfe  d+++++t fy++gg++qs+rkke+++a+k+++ +rGi++y+p+  h+ G p+Gqr+lm+y+vsgt ++vegddlhf
   WP_011449112.1   4 IERAQKLFLKALKTKFEG-DVADTKTGFYNFGGLNQSPRKKEFMEASKKVELRRGISMYDPNrCHLgGLPMGQRQLMTYEVSGTGTFVEGDDLHF 97 
@@ -599,10 +599,10 @@ Domain annotation for each sequence (and alignments):
   WP_011449112.1 193 VNKLFPAKQAEQLNEAVGKSLWQAIHIPTIVSRTCDGGTTSRWSAMQIGMSFITAYRMCAGEAAVADLSFAAKHAGVIQMASHLPARRARGPNEP 287
                      *********************************************************************************************** PP
 
-        mcrAgene 285 GGlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyg.glaev.....vka 373
+        mcrAgene 285 GGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkye.glaev.....vka 373
                      GG++fG++ad++q++r++++dpak+slevv+ag+ml+dqiwlGsymsGGvGftqyataaytd+ild+ftyy++dyi+dky+ ++++      vk+
   WP_011449112.1 288 GGIMFGHFADMIQANRKYPNDPAKASLEVVGAGCMLFDQIWLGSYMSGGVGFTQYATAAYTDNILDEFTYYGMDYIKDKYKvDWKNPspkdkVKP 382
-                     ********************************************************************************965666588888*** PP
+                     ********************************************************************************966776688888*** PP
 
         mcrAgene 374 tldvvkdiatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsy 468
                      t ++v+dia evtl+a+eqye++p+++edhfGGsqra+v+aaa+G+++ +at+n+naGl+gwylsml+hke +srlGffGydlqdqcG++n+ls+
@@ -617,10 +617,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_048111146.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1017.2   2.7         0         0       2     558 .]       4     568 .]       3     568 .] 0.98
+   1 ! 1017.9   2.8         0         0       2     558 .]       4     568 .]       3     568 .] 0.98
 
   Alignments for each domain:
-  == domain 1  score: 1017.2 bits;  conditional E-value: 0
+  == domain 1  score: 1017.9 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpd.vha.GvplGqralmpykvsgtdivvegddlhf 94 
                      ve+++k+flkalk+kf+ +d+++++t fy++gg++qs+rk+e++ a+k+i+ +rGi++y+p+  h+ G+p+Gqr+lm+y+vsgt ++vegddlh+
   WP_048111146.1   4 VEHSQKQFLKALKEKFKGQDVESQKTGFYKFGGVQQSPRKREFMAATKKIEADRGISMYDPEhCHLnGIPMGQRQLMTYEVSGTGTFVEGDDLHY 98 
@@ -636,10 +636,10 @@ Domain annotation for each sequence (and alignments):
   WP_048111146.1 194 IEKLFPKKQAEALKAEIGKSMYQAIHVPTIVVRTCDGGTTSRWSAMQIGMSFIAAYRTCAGEAAVADLSFAAKHAGVIQMGSHLPARRARGPNEP 288
                      *********************************************************************************************** PP
 
-        mcrAgene 285 GGlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaev......vka 373
-                     GG++fG+++d++q++r+++ddpak+slevvaaga+l+dqiwlGsymsGGvGftqyataaytd+ilddftyy++dy++dkyg   ++      +++
+        mcrAgene 285 GGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaev......vka 373
+                     GG++fG+++d++q++r+++ddpak+slevvaaga+l+dqiwlGsymsGGvGftqyataaytd+ilddftyy++dy++dky+    +      +++
   WP_048111146.1 289 GGIKFGMFSDMIQADRKYPDDPAKASLEVVAAGAALFDQIWLGSYMSGGVGFTQYATAAYTDNILDDFTYYGMDYVKDKYGYNFRQpgadkvIRP 383
-                     ********************************************************************************9544334556669** PP
+                     ********************************************************************************8333323555559** PP
 
         mcrAgene 374 tldvvkdiatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsy 468
                      t d+v+diatevtly++eqyek+p+l+edhfGGsqra+v+aaaaG++t+++tgn+naGl++wylsm++hk+ +srlGffGydlqdqcG+an+ls+
@@ -654,10 +654,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_012106121.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1015.6   0.1         0         0       2     558 .]       6     561 .]       5     561 .] 0.99
+   1 ! 1016.8   0.1         0         0       2     558 .]       6     561 .]       5     561 .] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1015.6 bits;  conditional E-value: 0
+  == domain 1  score: 1016.8 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpd.vha.GvplGqralmpykvsgtdivvegddlhf 94 
                      +e+++k+flka+k+kf+e d++ ++t f r g  +qs+rk+e+ k+++++a +rGi++y+p+  h+ G+plGqr+lm+y+vsgt ++vegddlhf
   WP_012106121.1   6 IERTQKLFLKAMKEKFAE-DPQATSTVFARAGL-EQSPRKMEFLKEGQKVALDRGISMYDPKrCHCgGIPLGQRQLMTYEVSGTGVFVEGDDLHF 98 
@@ -673,10 +673,10 @@ Domain annotation for each sequence (and alignments):
   WP_012106121.1 194 LDKLFPAKQAAALKAAVGKSMWQAVHIPTTVSRTCDGGTTSRWSAMQIGMSFIGAYKMCAGEAAVSDLAFAAKHAGVIQMADILPARRARGPNEP 288
                      *********************************************************************************************** PP
 
-        mcrAgene 285 GGlsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvk 379
-                     GG++fG+++d++q++r++++dp+k++levv+agaml+dqiwlGsymsGGvGftqyataaytd+ildd+ yy+ dy+++ +ggl + +k t + v 
+        mcrAgene 285 GGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvk 379
+                     GG++fG+++d++q++r++++dp+k++levv+agaml+dqiwlGsymsGGvGftqyataaytd+ildd+ yy+ dy+++ ++gl + +k t + v 
   WP_012106121.1 289 GGIKFGHFGDMIQADRKYPNDPVKATLEVVGAGAMLFDQIWLGSYMSGGVGFTQYATAAYTDNILDDYCYYGLDYVKKNHGGLGK-AKLTQEAVS 382
-                     ***********************************************************************************99.9******** PP
+                     **********************************************************************************999.9******** PP
 
         mcrAgene 380 diatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdegl 474
                      dia+evtly++eqye+yp++ledhfGGsqra+vlaaa+G++++l t n+naGl++wy+smllhke +srlGffGydlqdqcG+an +s+r deg 
@@ -691,10 +691,10 @@ Domain annotation for each sequence (and alignments):
 >> WP_011954158.1  MULTISPECIES: coenzyme-B sulfoethylthiotransferase subunit alpha 
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1014.8   0.6         0         0       2     558 .]       1     551 []       1     551 [] 0.99
+   1 ! 1016.1   0.6         0         0       2     558 .]       1     551 []       1     551 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1014.8 bits;  conditional E-value: 0
+  == domain 1  score: 1016.1 bits;  conditional E-value: 0
         mcrAgene   2 veeekkkflkalkkkfeeeditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvhaGvplGqralmpykvsgtdivvegddlhfvn 96 
                      +e+e+k f kal++kf+ ed ++++t+fy+++gwkqs+rk+e+ +aa+++a++r +++ynpd+  GvplGqr+lm+yk+sgtd +vegddlhf+n
   WP_011954158.1   1 MENEEKVFFKALNQKFKGEDNESNHTSFYCFDGWKQSPRKREFNDAAEKLAKDRNMPFYNPDI--GVPLGQRSLMTYKISGTDDYVEGDDLHFCN 93 
@@ -710,10 +710,10 @@ Domain annotation for each sequence (and alignments):
   WP_011954158.1 189 KEFPEDQAQMLKDYLGNKTYQVSRVPTLVVRACDGGTVSRWSAMQIGMSFINAYKLCAGEAAIADFSYAAKHADVIGMASFLPARRARGPNEPGG 283
                      *********************************************************************************************** PP
 
-        mcrAgene 287 lsfGvladivqtsrvksddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkygglaevvkatldvvkdi 381
-                     +sfG ++d++qtsr+ sddpa+v+lev+a +a+lydq+wlGsymsGGvGftqya+a+ytddilddf+yy+ dy+ed yg ++   ++t+dvv+di
-  WP_011954158.1 284 VSFGAFSDMIQTSRI-SDDPAEVTLEVIAGAAALYDQVWLGSYMSGGVGFTQYASATYTDDILDDFVYYGLDYVEDNYGLCQA--EKTMDVVRDI 375
-                     ***************.**************************************************************97766..99******** PP
+        mcrAgene 287 lsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaevvkatldvvkdi 381
+                     +sfG ++d++qtsr+s ddpa+v+lev+a +a+lydq+wlGsymsGGvGftqya+a+ytddilddf+yy+ dy+ed y gl++ +++t+dvv+di
+  WP_011954158.1 284 VSFGAFSDMIQTSRIS-DDPAEVTLEVIAGAAALYDQVWLGSYMSGGVGFTQYASATYTDDILDDFVYYGLDYVEDNY-GLCQ-AEKTMDVVRDI 375
+                     ****************.*************************************************************.7888.899******** PP
 
         mcrAgene 382 atevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGaanvlsyrsdeglpl 476
                      +tevtly+leqye  p+lle+hfGGsqra+v++aaaG++ta+at+n+naG++gwylsmllhke hsrlGf+GydlqdqcG+an+ls+rsdegl++
@@ -731,13 +731,13 @@ Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (558 nodes)
 Target sequences:                     151574  (46815990 residues searched)
-Passed MSV filter:                      4549  (0.0300117); expected 3031.5 (0.02)
-Passed bias filter:                     3464  (0.0228535); expected 3031.5 (0.02)
-Passed Vit filter:                       249  (0.00164276); expected 151.6 (0.001)
+Passed MSV filter:                      4552  (0.0300315); expected 3031.5 (0.02)
+Passed bias filter:                     3466  (0.0228667); expected 3031.5 (0.02)
+Passed Vit filter:                       245  (0.00161637); expected 151.6 (0.001)
 Passed Fwd filter:                        18  (0.000118754); expected 1.5 (1e-05)
 Initial search space (Z):             151574  [actual number of targets]
 Domain search space  (domZ):              18  [number of targets reported over threshold]
-# CPU time: 2.20u 0.05s 00:00:02.25 Elapsed: 00:00:00.89
-# Mc/sec: 29121.44
+# CPU time: 2.07u 0.08s 00:00:02.15 Elapsed: 00:00:00.85
+# Mc/sec: 30387.96
 //
 [ok]
