@@ -1,25 +1,39 @@
-#This program takes the an input of FASTA files and will filter them for pH resistant Methanogens.
-#User must input the variable of the proteome file numbers to be analyzed. 
+#This program searches fasta files for the presence of mcrA and hsp70 genes to indicate the presence of methanogens
+#usage: bash phresistance.sh 'ref_sequences/mcrAgene_*.fasta' 'ref_sequences/hsp70gene_*.fasta' './proteomes/proteome_*.fasta'
 
-#mcrA reference sequence
-cat ref_sequences/mcrAgene_??.fasta > mcraref.fasta
+#combine mcrA reference sequences into one file
+cat $1 > mcraref.fasta
+
+#align file of mcrA reference sequences using muscle
 ./programs/muscle -in "mcraref.fasta" -out "mcramuscle.fasta"
-./programs/hmmbuild --amino "mcrabuild.fasta" "mcramuscle.fasta"
-for proteome in ./proteomes/proteome_$@.fasta
+
+#form hidden markov model from muscle alignment
+./programs/hmmbuild --amino "mcrabuild.hmm" "mcramuscle.fasta"
+
+#search in each proteome for mcrA matches
+for proteome in $3
 do
-./programs/muscle -in $proteome -out "proteomemuscle_$@.fasta"
-./programs/hmmbuild --amino "proteomebuild_$@.fasta" "proteomemuscle_$@.fasta"
-./programs/hmmsearch "mcrabuild.fasta" "proteomebuild_$@.fasta" > processedproteome$@
+processedfile=$(echo $proteome | sed 's/.fasta//g')
+./programs/hmmsearch mcrabuild.hmm $proteome > $processedfile"mcra".txt
 done
 
 
-#hsp reference sequence
-#cat ref_sequences/hsp70gene_??.fasta > hspref.fasta
-#./progrmas/muscle -in "hspref.fasta" -out "hspmuscle.fasta"
-#./programs/hmmbuild --amino "hspbuild.fasta" "hspmuscle.fasta"
+#combine hsp70 reference sequences into one file
+cat $2 > hspref.fasta
 
-#for
-#./programs/hmmsearch "hspbuild.fasta"
+#align file of hsp70 reference sequences using muscle
+./programs/muscle -in "hspref.fasta" -out "hspmuscle.fasta"
+
+#form hidden markov model from muscle alignment
+./programs/hmmbuild --amino "hsp70build.hmm" "hspmuscle.fasta"
+
+#search in each proteome for hsp70 matches
+for proteome in $3
+do
+processedfile=$(echo $proteome | sed 's/.fasta//g')
+./programs/hmmsearch hsp70build.hmm $proteome > $processedfile"hsp70".txt
+done
 
 
-
+#thoughts for table: hsp-in the reference files, chaperone dnak is the only one that appears, so count the number of those in each hsp file for proteomes
+#chaperone dnak is written twice, so could do grep "-" | grep "molecular chaperone DnaK"

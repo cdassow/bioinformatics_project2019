@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  mcrabuild.hmm
+# target sequence database:        ./proteomes/proteome_24.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       mcramuscle  [M=558]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+          0 1123.6   4.0          0 1123.4   4.0    1.0  1  WP_011033189.1  coenzyme-B sulfoethylthiotransferase subunit 
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_011033189.1  coenzyme-B sulfoethylthiotransferase subunit alpha 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 1123.4   4.0         0         0       2     558 .]       2     570 .]       1     570 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 1123.4 bits;  conditional E-value: 0
+      mcramuscle   2 veeekkkflkalkkkfeee.........ditekttkfyrlggwkqsarkkelvkaakeiaekrGialynpdvhaGvplGqralmpykvsgtdivv 87 
+                     ++++++kf+k++++kf++e         dit kt+kf+rlg+ +q+ark+e++ka+keiaekrGia+ynp++h+G+plGqra++py++sgtdiv+
+  WP_011033189.1   2 AADIFSKFKKSMEVKFTQEygsnqqaggDITGKTAKFLRLGP-EQDARKAEMIKAGKEIAEKRGIAFYNPMMHSGAPLGQRAITPYTLSGTDIVA 95 
+                     678899************************************.**************************************************** PP
+
+      mcramuscle  88 egddlhfvnnaalqqlwddirrtvivgldtahevlekrlgkevtpetineylevlnhalpGaavvqehmvethpalvddcyvkvftGddeladei 182
+                     e+ddlh+vnnaa+qq+wddirrt+ivgld+ahe+lekrlgkevtpetin+ylevlnha+pGaavvqe+mvethpalvddcyvkvftGddeladei
+  WP_011033189.1  96 EPDDLHYVNNAAMQQMWDDIRRTCIVGLDMAHETLEKRLGKEVTPETINHYLEVLNHAMPGAAVVQEMMVETHPALVDDCYVKVFTGDDELADEI 190
+                     *********************************************************************************************** PP
+
+      mcramuscle 183 dkqfvidinkefpeeqaeqlkaaiGkttwqavriptivsrvtdGgttsrwsamqigmsfisayklcaGeaavadlsyaakhaevvsmgellparr 277
+                     dkq+vi+ink+f+eeqa+q+ka++Gkttwqa++iptivsr+tdG++tsrw+amqigmsfisay++caGeaavadls+aakha++vsmge+lparr
+  WP_011033189.1 191 DKQYVININKMFSEEQAAQIKASMGKTTWQAIHIPTIVSRTTDGAQTSRWAAMQIGMSFISAYAMCAGEAAVADLSFAAKHAALVSMGEMLPARR 285
+                     *********************************************************************************************** PP
+
+      mcramuscle 278 argpnepGGlsfGvladivqtsrvsaddpakvslevvaagamlydqiwlGsymsGGvGftqyataaytddilddftyydvdyiedkyeglaev.. 370
+                     argpnepGGlsfG+ladi+qtsrvs +dpak++levv+ag+mlydqiwlGsymsGGvGftqyataaytddild++tyydvdyi+dky+g+a+   
+  WP_011033189.1 286 ARGPNEPGGLSFGHLADIIQTSRVS-QDPAKIALEVVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNTYYDVDYINDKYNGAANLgt 379
+                     *************************.*****************************************************************9999 PP
+
+      mcramuscle 371 ...vkatldvvkdiatevtlyaleqyekypalledhfGGsqratvlaaaaGvatalatgnanaGlsgwylsmllhkeahsrlGffGydlqdqcGa 462
+                        vkatldvvkdiate+tly++e+yek+p++ledhfGGsqratvlaaa+Gva+alatgnanaGlsgwylsm++hkea++rlGffG+dlqdqcGa
+  WP_011033189.1 380 dnkVKATLDVVKDIATESTLYGIETYEKFPTALEDHFGGSQRATVLAAASGVACALATGNANAGLSGWYLSMYVHKEAWGRLGFFGFDLQDQCGA 474
+                     999******************************************************************************************** PP
+
+      mcramuscle 463 anvlsyrsdeglplelrGpnypnyamnvGhqgeyagiaqaahaargdafalnplikvafaddslvfdfaeprkefarGalrefepaGersliipa 557
+                     +nvlsy++deglp+elrGpnypnyamnvGhqg+yagiaqaah++rgdaf++nplikv+fadd+++f+faepr+ef+rGa+ref+paGersliipa
+  WP_011033189.1 475 TNVLSYQGDEGLPDELRGPNYPNYAMNVGHQGGYAGIAQAAHSGRGDAFTVNPLIKVCFADDLMPFNFAEPRREFGRGAIREFVPAGERSLIIPA 569
+                     **********************************************************************************************9 PP
+
+      mcramuscle 558 k 558
+                     k
+  WP_011033189.1 570 K 570
+                     7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (558 nodes)
+Target sequences:                       3338  (1006346 residues searched)
+Passed MSV filter:                       101  (0.0302576); expected 66.8 (0.02)
+Passed bias filter:                       85  (0.0254643); expected 66.8 (0.02)
+Passed Vit filter:                         4  (0.00119832); expected 3.3 (0.001)
+Passed Fwd filter:                         1  (0.000299581); expected 0.0 (1e-05)
+Initial search space (Z):               3338  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.04
+# Mc/sec: 11313.04
+//
+[ok]
