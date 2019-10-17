@@ -14,8 +14,12 @@
 #********************************************************************************************************************
 
 # Loop thru files in proteome directory
+echo "Starting loop"
 for fileP in $1/*.$2 # Ayyyyyy it works!!!
 do
+	echo "Looping for $fileP"
 	# Should activate muscle for each proteome file sequentially with outnames <temp_m_filename>
-	xargs ../bin/muscle3.3.31 -in $fileP -out temp_m_$(echo $fileP | grep -E "^$1.+^$2")
+	echo $fileP | xargs ../bin/muscle3.3.31 -out temp_m_$(echo $fileP | rev | cut -d "/" -f 1 | \
+	     rev | cut -d "." -f 1).txt
+	echo temp_m_$(echo $fileP | rev | cut -d "/" -f 1 | rev | cut -d "." -f 1).txt
 done
