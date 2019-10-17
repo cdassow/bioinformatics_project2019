@@ -37,3 +37,11 @@ done
 
 #thoughts for table: hsp-in the reference files, chaperone dnak is the only one that appears, so count the number of those in each hsp file for proteomes
 #chaperone dnak is written twice, so could do grep "-" | grep "molecular chaperone DnaK"
+
+
+#must use uniq to get rid of duplicates
+# var1=(proteome_$@hsp70.txt | grep -w ">>" | cut -d " " -f 2 | wc -l >> proteome_$@hsp70_number.txt)
+# var2=(proteome_$@mcra.txt | grep -w ">>" | cut -d " " -f 2 | wc -1 >> )
+
+# echo 
+
