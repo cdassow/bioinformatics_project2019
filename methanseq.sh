@@ -15,7 +15,7 @@ for file in hsp*.fasta; do cat $file >> ../hspgene_seqs.fa; done
 /afs/crc.nd.edu/user/c/ctalbot2/Private/bioinformatics_project2019/muscle -in hspgene_seqs.fa -out methanseqs.afa
 
 #we need to seek out the proteomes that contain this mcr gene these are methanogens
-
+hmmbuild methanogens.hmm methanseqs.af
 #muscle for hsp
 
 #from the list of proteomes that are actually methanogens, we count the number of hsp gene occurances
