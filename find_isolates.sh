@@ -19,7 +19,6 @@ case $bool_continue in
 		#rm any combined files that already exist
 		rm ./ref_sequences/hsp70gene_combined.fasta
 		rm ./ref_sequences/mcrAgene_combined.fasta
-		rm ./proteomes/proteome_combined.fasta
 
 		#combine the reference sequences and proteome genome
 		for file in ./ref_sequences/hsp70gene_??.fasta
@@ -30,12 +29,8 @@ case $bool_continue in
 		for file in ./ref_sequences/mcrAgene_??.fasta
 		do
 		cat $file >> ./ref_sequences/mcrAgene_combined.fasta
-		done
+	cl	done
 
-		for file in ./proteomes/proteome_??.fasta
-		do
-		cat $file >> ./proteomes/proteome_combined.fasta
-		done
 
 		#allign the combined reference sequences with muscle
 		$1 -in ./ref_sequences/hsp70gene_combined.fasta -out hsp70gene.musc
@@ -45,11 +40,56 @@ case $bool_continue in
 		$2 hsp70gene.hmm hsp70gene.musc
 		$2 mcrAgene.hmm mcrAgene.musc 
 
+		#loops to search the genes for matches in each proteome
+		for file in ./proteomes/proteome_??.fasta
+			do
+			$3 --tblout $file"_hsp70_table"  hsp70gene.hmm $file
+			done
+
+		for file in ./proteomes/proteome_??.fasta
+			do
+			$3 --tblout $file"_mcrA_table"  mcrAgene.hmm $file
+			done
+
+			
+		
 		#search for the combined proteome sequences in the hmmr profile
 		$3 -o $4 hsp70gene.hmm ./proteomes/proteome_combined.fasta
 		$3 -o $5 mcrAgene.hmm ./proteomes/proteome_combined.fasta 
 
 		#report results location
+
+		touch final_results.txt
+		for num in {0..100}
+			do
+			echo "Proteome$(printf "%03d" "$num")" >> final_results.txt
+			done
+
+		
+		for file in ./proteomes/*_table
+			do
+			variable=$(cat $file | grep -v \# | uniq | wc -l)
+			echo $variable
+			for file in ./proteomes/
+			done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		printf "Assuming hmmr and muscle executed you can find your results in this directory in files $4 and $5\n"
 	;;
 	no)
