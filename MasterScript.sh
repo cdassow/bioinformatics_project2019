@@ -31,3 +31,25 @@ do
   ./ham/bin/hmmsearch --tblout hsp70_tbl_$microbe hsp70_hmm ~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/proteomes/proteome_$microbe.fasta
   ./ham/bin/hmmsearch --tblout mcrA_tbl_$microbe mcrA_hmm ~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/proteomes/proteome_$microbe.fasta
 done
+
+############################################
+# STEP 4 : CLEANIN' IT UP #
+############################################
+# This step compares the number of matches between hsp70 and mcrA and generates a table
+
+echo "proteme_name hsp70_matches mcrA_matches" > Summary1.txt
+for tbl in {01..50}
+do
+  x=$(echo proteome_$tbl)
+  y=$(~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/hsp70_tbl_$tbl | grep -v "#" | wc -l)
+  z=$(~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/mcrA_tbl_$tbl | grep -v "#" | wc -l)
+  echo "$x $y $z" >> Summary1.txt
+done
+
+############################################
+# STEP 5 : FINAL LIST #
+############################################
+# This step finds potentially pH resistant methanogens and puts them all in a list for your enjoyment
+
+cat Summary1.txt | grep -v " 0 " | cut -d " " -f 1 > PhResistantMethanogens.txt
+
