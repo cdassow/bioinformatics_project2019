@@ -220,6 +220,6 @@ Passed Fwd filter:                         6  (0.00191022); expected 0.0 (1e-05)
 Initial search space (Z):               3141  [actual number of targets]
 Domain search space  (domZ):               5  [number of targets reported over threshold]
 # CPU time: 0.17u 0.01s 00:00:00.18 Elapsed: 00:00:00.10
-# Mc/sec: 6153.74
+# Mc/sec: 6060.20
 //
 [ok]
