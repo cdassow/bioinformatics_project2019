@@ -1,0 +1,5 @@
+Proteomes03 and Proteome50 are each mcrA positive and have 3 hsp70 matches
+
+-Stephen Grisoli
+-Julia Forte
+-Nina Leutz
