@@ -66,13 +66,13 @@ done
 echo "Beginning hit counting"
 for fileS in *hits.csv
 do
-	cat $fileS | sed 's/_[0-9][0-9]\s/-'
+	cat $fileS | sed 's/_[0-9][0-9]\s/-/'
 	for (( a=1; a<=$5; a++ ))
 	do
 		gID=$(cat $fileS | head -n 1 | cut -d "-" -f 1)
 		echo "$gID"
 		cat $fileS | grep -h "$gID" > gene_$a-$fileS
-		sed '/$(cat $file | head -n 1 | cut -d " " -f 1)/d' $fileS
+		sed '/$gID/d' $fileS
 		sum=$(cat gene_$a-$fileS | cut -d " " -f 2 | awk '{total = total + $1}END{print total}')
 		echo "Gene$n $sum" >> $(echo $fileS | cut -d "-" -f 1)-sums.csv
 	done
