@@ -1,4 +1,3 @@
-#echo "","","" >.csv later in for loop echo file name a=echo file name  b=#hsp70 c=mrca y/n
 #Identifying a candidate pH-resistant methanogenic Archaea; there are 50 candidates,
 #in proteomes directory how many HSP70, binary do they have/not have mcrA
 #USAGE bash candidateID.sh
@@ -24,7 +23,7 @@ for file in ./proteomes/proteome*.fasta
  echo $shortFile1 : $result1 >> hsp70.txt
  done
 
+#table refinement, shows best candidates - have mcrA and highest amounts of hsp70
 paste -d ":" mrca.txt hsp70.txt > table.txt
-echo proteome number : mcrA : hsp70
-cat table.txt | cut -d : -f 1,2,4 | sort -k2 -r | sort -k3 -r
-
+cat table.txt | cut -d : -f 1,2,4 | sort -k2 -r | sort -k3 -r > candidateRanking.txt
+cat candidateRanking.txt
