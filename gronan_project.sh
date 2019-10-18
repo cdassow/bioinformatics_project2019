@@ -64,9 +64,10 @@ do
 	rm temp_m_$filenameR.msa temp_b_$filenameR.hmm temp_hmm.txt
 done
 echo "Beginning hit counting"
-for fileS in *hits.csv
+for fileS in *-hits.csv
 do
-	cat $fileS | sed 's/_[0-9][0-9]\s/-/'
+	echo "$fileS"
+	sed 's/_..\s/-/' $fileS
 	for (( a=1; a<=$5; a++ ))
 	do
 		gID=$(cat $fileS | head -n 1 | cut -d "-" -f 1)
@@ -74,10 +75,10 @@ do
 		cat $fileS | grep -h "$gID" > gene_$a-$fileS
 		sed '/$gID/d' $fileS
 		sum=$(cat gene_$a-$fileS | cut -d " " -f 2 | awk '{total = total + $1}END{print total}')
-		echo "Gene$n $sum" >> $(echo $fileS | cut -d "-" -f 1)-sums.csv
+		echo "Gene$a $sum" >> $(echo $fileS | cut -d "-" -f 1)-sums.csv
 	done
-	rm $fileS
 done
+rm *-hits.csv
 echo "Removing candidates that do not express at least 1 copy of all genes"
 grep -l " 0" *sums.csv | xargs rm -f
 echo "Calculating total sum score for each proteome"
