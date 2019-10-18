@@ -71,12 +71,13 @@ do
 		gID=$(cat $fileS | head -n 1 | cut -d "_" -f 1)
 		echo "ID: $gID; a=$a"
 		cat $fileS | grep -h "$gID" > gene_$a-$fileS
-		sed -i '/$gID/d' $fileS
+		sed -i '/"$gID"/d' $fileS
 		sum=$(cat gene_$a-$fileS | cut -d " " -f 2 | awk '{total = total + $1}END{print total}')
 		echo "Gene$a $sum" >> $(echo $fileS | cut -d "-" -f 1)-sums.csv
 	done
 	rm $fileS
 done
+rm *-total-hits.csv
 echo "Removing candidates that do not express at least 1 copy of all genes"
 grep -l " 0" *sums.csv | xargs rm -f
 echo "Calculating total sum score for each proteome"
