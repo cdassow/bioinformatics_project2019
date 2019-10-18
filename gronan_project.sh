@@ -71,7 +71,7 @@ do
 		gID=$(cat $fileS | head -n 1 | cut -d "_" -f 1)
 		echo "ID: $gID; a=$a"
 		cat $fileS | grep -h "$gID" > gene_$a-$fileS
-		cat $fileS | sed -e "$gID"'d'
+		cat $fileS | sed -e "$gID"'d' > $fileS # Removes first gene in list from file for sequential isolation
 		sum=$(cat gene_$a-$fileS | cut -d " " -f 2 | awk '{total = total + $1}END{print total}')
 		echo "Gene$a $sum" >> $(echo $fileS | cut -d "-" -f 1)-sums.csv
 	done
@@ -85,7 +85,7 @@ for fileF in *sums.csv
 do
 	tot_sum=$(cat $fileF | cut -d " " -f 2 | awk '{total = total + $1}END{print total}')
 	name=$(echo $fileF | cut -d "-" -f 1)
-	echo "$name $tot_sum" > proteome_list.txt
+	echo "$name $tot_sum" >> proteome_list.txt
 	echo "$name calculation complete"
 #	rm $fileF
 done
