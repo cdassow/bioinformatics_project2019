@@ -1,51 +1,51 @@
 proteome name: mcrA count, hsp70 count
-proteome 01: 18, 108
-proteome 02: 18, 108
-proteome 03: 18, 108
-proteome 04: 18, 108
-proteome 05: 18, 108
-proteome 06: 18, 108
-proteome 07: 18, 108
-proteome 08: 18, 108
-proteome 09: 18, 108
-proteome 10: 18, 108
-proteome 11: 18, 108
-proteome 12: 18, 108
-proteome 13: 18, 108
-proteome 14: 18, 108
-proteome 15: 18, 108
-proteome 16: 18, 108
-proteome 17: 18, 108
-proteome 18: 18, 108
-proteome 19: 18, 108
-proteome 20: 18, 108
-proteome 21: 18, 108
-proteome 22: 18, 108
-proteome 23: 18, 108
-proteome 24: 18, 108
-proteome 25: 18, 108
-proteome 26: 18, 108
-proteome 27: 18, 108
-proteome 28: 18, 108
-proteome 29: 18, 108
-proteome 30: 18, 108
-proteome 31: 18, 108
-proteome 32: 18, 108
-proteome 33: 18, 108
-proteome 34: 18, 108
-proteome 35: 18, 108
-proteome 36: 18, 108
-proteome 37: 18, 108
-proteome 38: 18, 108
-proteome 39: 18, 108
-proteome 40: 18, 108
-proteome 41: 18, 108
-proteome 42: 18, 108
-proteome 43: 18, 108
-proteome 44: 18, 108
-proteome 45: 18, 108
-proteome 46: 18, 108
-proteome 47: 18, 108
-proteome 48: 18, 108
-proteome 49: 18, 108
-proteome 50: 18, 108
+proteome_01: 0, 4
+proteome_02: 0, 4
+proteome_03: 0, 4
+proteome_04: 0, 4
+proteome_05: 0, 4
+proteome_06: 0, 4
+proteome_07: 0, 4
+proteome_08: 0, 4
+proteome_09: 0, 4
+proteome_10: 0, 4
+proteome_11: 0, 4
+proteome_12: 0, 4
+proteome_13: 0, 4
+proteome_14: 0, 4
+proteome_15: 0, 4
+proteome_16: 0, 4
+proteome_17: 0, 4
+proteome_18: 0, 4
+proteome_19: 0, 4
+proteome_20: 0, 4
+proteome_21: 0, 4
+proteome_22: 0, 4
+proteome_23: 0, 4
+proteome_24: 0, 4
+proteome_25: 0, 4
+proteome_26: 0, 4
+proteome_27: 0, 4
+proteome_28: 0, 4
+proteome_29: 0, 4
+proteome_30: 0, 4
+proteome_31: 0, 4
+proteome_32: 0, 4
+proteome_33: 0, 4
+proteome_34: 0, 4
+proteome_35: 0, 4
+proteome_36: 0, 4
+proteome_37: 0, 4
+proteome_38: 0, 4
+proteome_39: 0, 4
+proteome_40: 0, 4
+proteome_41: 0, 4
+proteome_42: 0, 4
+proteome_43: 0, 4
+proteome_44: 0, 4
+proteome_45: 0, 4
+proteome_46: 0, 4
+proteome_47: 0, 4
+proteome_48: 0, 4
+proteome_49: 0, 4
+proteome_50: 0, 4

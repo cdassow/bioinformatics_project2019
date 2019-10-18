@@ -1,5 +1,5 @@
 #This program searches fasta files for the presence of mcrA and hsp70 genes to indicate the presence of methanogens
-#usage: bash phresistance.sh 'ref_sequences/mcrAgene_*.fasta' 'ref_sequences/hsp70gene_*.fasta' './proteomes/proteome_*.fasta' './proteomes/proteome_*mcra.txt' './proteomes/proteome_*hsp70.txt'
+#usage: bash phresistance.sh 'ref_sequences/mcrAgene_*.fasta' 'ref_sequences/hsp70gene_*.fasta' './proteomes/proteome_*.fasta' ./proteomes/proteome_*mcra.txt ./proteomes/proteome_*hsp70.txt
 
 #combine mcrA reference sequences into one file
 cat $1 > mcraref.fasta
@@ -35,7 +35,7 @@ processedfile=$(echo $proteome | sed 's/.fasta//g')
 done
 
 
-#create table to organize data
+#create table to organize data:
 
 #create table header
 echo "proteome name: mcrA count, hsp70 count" > ./summarytable.txt
@@ -46,5 +46,8 @@ do
 number=$(echo $proteome | sed 's/.fasta//g' | tr -d ./proteomes_)
 var1=$(cat $4 | grep ">>" | wc -l)
 var2=$(cat $5 | grep ">>" | cut -d " " -f 3-6 | uniq | wc -l)
-echo "proteome $number: $var1, $var2" >> ./summarytable.txt
+echo "proteome_$number: $var1, $var2" >> ./summarytable.txt
 done
+
+#create list of candidate pH-resistant methanogens
+#cat summarytable.txt | grep "1," | sort -k 3 -nr | grep -v " 0" > candidatemethanogens.txt
