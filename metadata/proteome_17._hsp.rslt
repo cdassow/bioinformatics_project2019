@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  metadata/hsp.hmm
+# target sequence database:        proteomes/proteome_17.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hsp_ref  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+  ------ inclusion threshold ------
+      0.063    8.2  17.2      0.068    8.1  17.2    1.0  1  WP_012941020.1  ATP synthase archaeal subunit H 
+       0.29    6.0  15.5       0.37    5.6  15.5    1.1  1  WP_012941024.1  V-type ATP synthase subunit E 
+        1.4    3.8  10.3        1.6    3.5  10.3    1.0  1  WP_012766394.1  hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_012941020.1  ATP synthase archaeal subunit H 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1  17.2   0.00011     0.068     484     568 ..       5      95 ..       1     105 [. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00011
+         hsp_ref 484 eiermkkdaekhaeed.kkrkee.ie....vrneaesliqaaeklleeaedkvdedqkekveaaiedlkevleekdaeeikakt.ealseev 568
+                     e+ ++ ++ae   eed  k kee  e    +++ea+ +i+ aek  e+ + ++ e+ k+++e++ +++k+ l+ k++ ei++k   +++++v
+  WP_012941020.1   5 EVLEKIREAELKVEEDiAKAKEEaKEiinkAKDEAKKIIEDAEKEAEKIKAEILEKAKAEIEKEKQEVKNSLS-KQISEIESKGkSNMQNAV 95 
+                     5566678888888888423333313411124556778889999999999999999999999999999999998.667777766414455555 PP
+
+>> WP_012941024.1  V-type ATP synthase subunit E 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.6  15.5   0.00063      0.37     489     582 ..      15     107 ..       4     143 .. 0.43
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.00063
+         hsp_ref 489 kkdaekhaeedkkrkeei..evrneaesliqaaeklleeaedkvdedqkekveaaiedlkevleekdaeeikaktealseevqeigtklyqkaaa 581
+                     k++ ++ +ee +k+ e+i  e++ +ae +i++     e+ae +++  +++++++   ++k+ + +k+ e + a+ eal+++++e+  +  +k  +
+  WP_012941024.1  15 KQEVQRIKEEAEKEAERIiaEAKAKAEEIIEK---AKEDAEKEAERLRRQEISSVKLEMKREMLNKQKEILDAVFEALKQRIKEMDIETRKKIIE 106
+                     33444444444444444312333333333322...223444444444444444444444444444555555555555555555554444443332 PP
+
+         hsp_ref 582 e 582
+                     +
+  WP_012941024.1 107 S 107
+                     2 PP
+
+>> WP_012766394.1  hypothetical protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.5  10.3    0.0027       1.6     493     567 ..      11      88 ..       2     101 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.0027
+         hsp_ref 493 ekhaeedkkrkeeievrneaesliqaae...klleeaedkvdedqkekveaaiedlkevleekdaeeikaktealsee 567
+                     e+  ee +++ eei+ ++ + s++ +ae   k +ee + kv e  +e + +++ dl e  e+++  + ++k e+l + 
+  WP_012766394.1  11 EEVVEERRQEEEEIDEEEATGSALLTAEefdKKIEEIKAKVREAVQEALANTLADLLEKEEKEEKRKDETKAEELPKC 88 
+                     556788899999999999888888888733356888888888888888888888888888877777777888887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       1784  (476344 residues searched)
+Passed MSV filter:                       121  (0.0678251); expected 35.7 (0.02)
+Passed bias filter:                       67  (0.0375561); expected 35.7 (0.02)
+Passed Vit filter:                         9  (0.00504484); expected 1.8 (0.001)
+Passed Fwd filter:                         3  (0.00168161); expected 0.0 (1e-05)
+Initial search space (Z):               1784  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 18400.33
+//
+[ok]

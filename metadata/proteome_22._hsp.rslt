@@ -1,0 +1,278 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  metadata/hsp.hmm
+# target sequence database:        proteomes/proteome_22.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hsp_ref  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+   2.1e-280  930.4  23.8   2.3e-280  930.2  23.8    1.0  1  YP_003771257.1  molecular chaperone DnaK 
+    2.4e-56  190.3   0.1      4e-56  189.6   0.1    1.3  1  YP_003768560.1  molecular chaperone DnaK 
+    3.2e-51  173.3   0.0    4.2e-51  173.0   0.0    1.1  1  YP_003767333.1  chaperone protein DnaK-like protein 
+    6.1e-38  129.5   0.0    8.2e-38  129.1   0.0    1.1  1  YP_003764540.1  molecular chaperone Hsp70 
+    1.2e-32  112.0   0.0    1.7e-32  111.5   0.0    1.2  1  YP_003770822.1  molecular chaperone Hsp70 
+    1.2e-28   98.8   0.0    1.9e-28   98.1   0.0    1.3  1  YP_003762942.1  molecular chaperone 
+    7.8e-06   23.4   0.0    9.5e-06   23.2   0.0    1.1  1  YP_003763703.1  molecular chaperone DnaK-like protein 
+  ------ inclusion threshold ------
+      0.042   11.1   0.2      0.075   10.3   0.0    1.4  2  YP_003764309.1  3-oxoacyl-ACP synthase 
+       0.12    9.7   0.0       0.22    8.8   0.0    1.3  1  YP_003762961.1  D-xylulose kinase 
+
+
+Domain annotation for each sequence (and alignments):
+>> YP_003771257.1  molecular chaperone DnaK 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  930.2  23.8  2.3e-283  2.3e-280       1     617 [.       1     623 [.       1     624 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 930.2 bits;  conditional E-value: 2.3e-283
+         hsp_ref   1 mekilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisam 95 
+                     m++ +GidlGttns++avlegg+pt+i+n+eG+rttPs+vaf+k+ge l G+pak+qavtn ++ti s+kr++G +d+k +++gk+yt qeisa 
+  YP_003771257.1   1 MARAVGIDLGTTNSVVAVLEGGEPTVIANSEGSRTTPSIVAFAKNGEVLTGQPAKNQAVTNVDRTIRSVKRHIG-TDWKTEIDGKNYTSQEISAR 94 
+                     67889*********************************************************************.******************** PP
+
+         hsp_ref  96 ilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfe 190
+                     +l k+k+daeaylGe++++avitvPayf+d+qrqatk+aG+iaGl+v ri+nePtaa+layGldk ek+q+ilv+dlGGGt+dvs+le+g+gv+e
+  YP_003771257.1  95 VLMKLKRDAEAYLGETITDAVITVPAYFEDAQRQATKEAGQIAGLNVLRIVNEPTAAALAYGLDKGEKEQTILVFDLGGGTFDVSLLEIGEGVVE 189
+                     *********************************************************************************************** PP
+
+         hsp_ref 191 vlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitat.dsgpkhlelkltrakleelved 284
+                     v +tsGd++lGGdd+de+i+++l+d+fk ++Gidl++dk+alqr+++aaekakielss  +++inlP+it++ d++p  l+++l+ra++++++ d
+  YP_003771257.1 190 VRATSGDNHLGGDDWDERIVKWLVDKFKATNGIDLTKDKMALQRIREAAEKAKIELSSSNSASINLPYITVDaDKNPLFLDETLSRAEFQKITAD 284
+                     ************************************************************************999******************** PP
+
+         hsp_ref 285 lvertvapiekaledaklsksdidkvilvGGstrmPavkelveellG.kepeknvdPdeavalGaaiqagvlaGevkdivlldvtPlslgietlG 378
+                     l+ert++p ++ ++da++   did+v+lvGGstrmPav +lv+el+G +ep+k+v+Pde+va+Gaa+qagvl+Gevkd++lldvtPlslgiet+G
+  YP_003771257.1 285 LLERTRNPFNNVIRDAGIAVGDIDHVVLVGGSTRMPAVSDLVKELTGgREPNKGVNPDEVVAVGAALQAGVLKGEVKDVLLLDVTPLSLGIETKG 379
+                     *********************************************95489********************************************* PP
+
+         hsp_ref 379 gvaerliernttiPtkkskvfttaadnqtsveihvlqGerelaeeneslGrfkltgipPaPrGvPqievtfdidanGilnveakdlgtgkeesit 473
+                     gv+++liernttiPtk+s++f+ta dnq+sv+i+v+qGere+a++n+ lG+f+ltg+pPaPrGvPqievtfdidanGi++v+akdlgt+ke+s+t
+  YP_003771257.1 380 GVFTKLIERNTTIPTKRSEIFSTADDNQPSVQIQVFQGEREIAAHNKKLGMFELTGLPPAPRGVPQIEVTFDIDANGIVHVTAKDLGTNKEQSMT 474
+                     *********************************************************************************************** PP
+
+         hsp_ref 474 ieasaklsdeeiermkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdedqkekveaaiedlkevleekdaeeikaktealseev 568
+                     i++++ l +++ierm+kdae+haeedkkr+ee e+rn+ae+l++++ek +++++dk+ ed k kv++ai++ +e l++ d  +i++++e+l+ + 
+  YP_003771257.1 475 ITGGSALPKDDIERMVKDAEAHAEEDKKRREEAETRNQAETLVYQTEKFVKDNDDKLPEDLKGKVKSAIDEANESLKGTDSTKIREAIEKLNTAS 569
+                     *********************************************************************************************** PP
+
+         hsp_ref 569 qeigtklyqkaaae.....gaaaaegaggaagsgdakgedeevvdadfedvdde 617
+                     qe+gt+ly +a+a+     +  a +ga+g ag+++ + + ++vvda++ ++d++
+  YP_003771257.1 570 QELGTALYANANADaaagaAGGAGAGAAGDAGAAGGQAKADDVVDAEIVEEDEK 623
+                     *********998884443333333444445555577788999*****9988876 PP
+
+>> YP_003768560.1  molecular chaperone DnaK 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  189.6   0.1   3.9e-59     4e-56       4     379 ..     280     661 ..     277     763 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 189.6 bits;  conditional E-value: 3.9e-59
+         hsp_ref   4 ilGidlGttnsaaavle.ggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisamil 97 
+                     +l id+Gt+ s+++     g+  +ip  +G+  +Psv+ f  d + lvG +a + +   P +ti  +kr +G     + +eg+   P     +il
+  YP_003768560.1 280 LLAIDFGTSYSVVSWYRpEGDVALIPGPDGRPLVPSVLHFLPDMDYLVGTAAVEATPYRPTSTIRHAKRDLG-RSVDYLIEGRSIEPVLAVGLIL 373
+                     689**********9876368999*************************************************.889999**************** PP
+
+         hsp_ref  98 qkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfevl 192
+                     + ++++ae+ lG +v++++ + Pa f  +q ++   a e+aGl v+r+i eP aasl   +   e +q  lv dlGGGt+dv+++e g+gv ev 
+  YP_003768560.1 374 RSLRRNAEEALGSPVRRCIASHPANFTLRQIDTLEKAFELAGLTVTRMIGEPNAASLLTLMATPEAEQDYLVVDLGGGTFDVALVEAGEGVAEVR 468
+                     *********************************************************************************************** PP
+
+         hsp_ref 193 stsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsgpkhlelkltrakleelvedlve 287
+                     + +G +++GG d+d+ ++ y  +++++ +G   +  +++  +l+  ae+ak +l  +  t++ l  +   + g +++++++ r+++ +l+ +l +
+  YP_003768560.1 469 AVAGSNEVGGLDFDDVMVAYAEEQLRTVHGWGGELTSTVRDKLRREAERAKRDLGYRDATTMLLTDLDDVSRGLVDISIEIDRTQFRRLTAELNK 563
+                     *********************************************************************************************99 PP
+
+         hsp_ref 288 rtvapiekaledaklsk......sdidkvilvGGstrmPavkelveell.GkepeknvdPdeavalGaaiqagvlaGevkdivlldvtPlslgie 375
+                      ++a++++ ++   + +      +   kv+l G  t++ +v e++  ++ G e+ +n + + ava G   qagvl+G  k  +ll+   + +g+ 
+  YP_003768560.1 564 SVRATLDTVFTRLAFGEsvsawvERGGKVMLAGQGTKIFTVSEQITAVVpGAEVVSNFQ-ETAVAHGLGTQAGVLTGFQKTFLLLNALSFGVGVL 657
+                     8888888766554443311101134469*****************99876899999987.679**********************9877777766 PP
+
+         hsp_ref 376 tlGg 379
+                     + G 
+  YP_003768560.1 658 VSGT 661
+                     5543 PP
+
+>> YP_003767333.1  chaperone protein DnaK-like protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  173.0   0.0   4.1e-54   4.2e-51       5     353 ..       5     351 ..       1     359 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 173.0 bits;  conditional E-value: 4.1e-54
+         hsp_ref   5 lGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisamilqk 99 
+                     lGidlGtt +aaav  +g+ ++++  + + ++Psvv    dg  lvG++a r+a  +P++     kr++G +   v l g  +    + a++l  
+  YP_003767333.1   5 LGIDLGTTFTAAAVDRAGHVEMVSLGDRTAAIPSVVLLRADGSVLVGDAASRRASVEPDRVAREFKRRLG-DPTPVLLGGAPHSVASLMAHLLGY 98 
+                     8*************************999*****************************************.788999****************** PP
+
+         hsp_ref 100 ikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldke.ekdqkilvydlGGGtldvsilelgggvfevls 193
+                     + +      G + +   +t Pa +   +r+       ++G++ + ++ eP aa+  y    + +    + vydlGGGt+d ++l   +g fe+l 
+  YP_003767333.1  99 VVRTVAGQQGGRPDSITLTHPANWGPYKRELFEQVPRLTGIDHVGLVTEPEAAAAHYAAQERlDDGAVVAVYDLGGGTFDATVLRKRNGGFEILG 193
+                     *9999999999**********************************************9875515557788************************9 PP
+
+         hsp_ref 194 t.sGdtqlGGddldeaiidyladefkke.eGidlred..kaalqrlkdaaekakielssvleteinlPfitatdsgpkhlelkltrakleelved 284
+                     t +G + lGG d+dea+  ++   +  +   +d  +    aa+ rl++    ak  ls+  +te+ +P +      +++ e++ltr ++ee++++
+  YP_003767333.1 194 TpEGIEGLGGIDFDEAVFGHVDRALDGKlSQLDPDDPgaVAAVVRLRQECVLAKEALSA--DTEVAVPVLLP----SVQTEVRLTRGEFEEMIRP 282
+                     9569999*************988887551334443322257899*************96..68889998865....4677999************ PP
+
+         hsp_ref 285 lvertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqag 353
+                      +  t +++++al+ a+l + d+  v+lvGGs+r+P v +lv+  lG+ +  ++ P+  valGaa  a+
+  YP_003767333.1 283 SIAATIGSLHRALRSANLRPADLGAVLLVGGSSRIPLVSQLVSAELGRPTAVDIHPKYGVALGAAALAS 351
+                     ****************************************************************98765 PP
+
+>> YP_003764540.1  molecular chaperone Hsp70 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  129.1   0.0     8e-41   8.2e-38       3     349 ..       2     351 ..       1     357 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 129.1 bits;  conditional E-value: 8e-41
+         hsp_ref   3 kilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytP.qeisami 96 
+                     +il +dlGt+n++a +   g+p  +++ +G+  +Ps v  +++g  +vG+ a r+a  +P +     kr++   + ++ l g++  P  +  a i
+  YP_003764540.1   2 RILSVDLGTSNTVAVLSAHGRPPRVVEVDGSANMPSAVFATEEGTIMVGRDAERRARLDPTRFEPNPKRRID--EQTLLL-GTDVVPvTDALAAI 93 
+                     79*********99999999****************************************************8..455555.5555552788999* PP
+
+         hsp_ref  97 lqkikkdaeaylG.eevekavitvPayfndnqrqatkdaGeiaGleve.riinePtaaslayGld..k.eekdqkilvydlGGGtldvsilelgg 186
+                     l+++ +++   lG e+ ++  +t Pa +   +r+    a  +aG+  +  ++ eP aa+  +     k     q + vydlG Gt+dv+++  ++
+  YP_003764540.1  94 LRRVLEETSRQLGgEQPDEVRLTHPAQWGQPRRNVLMAAARLAGMGPNiLLVPEPVAAAAHFASFpgKsLAPGQALAVYDLGAGTFDVAVVGATQ 188
+                     ***9999988886266677779***********************87625799****99888654112034579999****************** PP
+
+         hsp_ref 187 gvfevlstsGdtqlGGddldeaiidyladefkkeeGid....lr....edkaalqrlkdaaekakielssvleteinlPfitatdsgpkhlelkl 273
+                       f vl+ +G  +lGG d+d+a++ ++  e  +++       lr     d+ + + l++    ak  ls + +te+ +P       +p + ++ +
+  YP_003764540.1 189 NGFTVLAEDGLPDLGGLDVDQALMVHVGREVSHSDPQRwqrlLRpestADRRTRRALQEDVKAAKEALSRHPQTEVPMP-------EPFK-DVLV 275
+                     ***************************999987765431122441111455556667777888999**********999.......4543.6789 PP
+
+         hsp_ref 274 trakleelvedlvertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaa 349
+                     tr +le lv++ + r+v+ ++++l+ ++l+++ +  + lvGGs+r+P v  ++ e lG  p +  +P+ avalGa 
+  YP_003764540.1 276 TRGELEGLVRPAMLRSVELLSRTLRSSGLTPERLAGIYLVGGSSRLPLVGAMIAEKLGVVPGSLDQPETAVALGAQ 351
+                     **************************************************************************95 PP
+
+>> YP_003770822.1  molecular chaperone Hsp70 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  111.5   0.0   1.7e-35   1.7e-32       4     347 ..       3     344 ..       1     348 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 111.5 bits;  conditional E-value: 1.7e-35
+         hsp_ref   4 ilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisamilq 98 
+                     +l id+Gt+ ++  +   g+     + +G+ t+ s v   +dg ++vG+ a r+a  +P +     kr++   + +++l +++    +  a +l+
+  YP_003770822.1   3 VLSIDFGTSSTVGVLSAFGRGPRAIEVDGSVTMSSAVYVNDDGLLVVGQDAERRARLEPSRFEPNPKRRID--EGTLRLGDTDVDIADAFAAVLR 95 
+                     899****996554444445544455789******************************************8..7899****************** PP
+
+         hsp_ref  99 kikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfevls 193
+                     ++ ++ae  lG++  ++ i+ Pa +  ++++  + a + a +  +r+i eP aa+  y    +     i vydlG Gt+d +++ ++   f vl+
+  YP_003770822.1  96 RMGEEAERQLGHPPAQTRISHPAGWGADRQDVLRVAAAKARFADVRLIPEPVAAAAHYASLGRRAGGPIGVYDLGAGTFDCAVVGITRQGFTVLA 190
+                     ***********************999888899999***********************977799999**************************** PP
+
+         hsp_ref 194 tsGdtqlGGddldeaiidyladefkkeeGid....lredkaalqrlkda....aekakielssvleteinlPfitatdsgpkhlelkltraklee 280
+                      +G ++lG  d+d+a++ ++  +  +++  +    lr  ++a +r + a      +ak  ls +++t++ +        +p   ++ ++r +le 
+  YP_003770822.1 191 EDGLSDLGSLDIDQALLVHIGRSVSHADPAQwqrlLRPQTTADRRTRRAllqdVRDAKESLSRHAQTHVPM-------AEPF-GDVLVSRDELEA 277
+                     ********************99888777655333345555555554444222267899999*999999865.......2343.36789******* PP
+
+         hsp_ref 281 lvedlvertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalG 347
+                     lv++ + r+++ +  +++ a+l++ ++  v lvGG++rmP +  l+ + lG  p  + +P+ ava+G
+  YP_003770822.1 278 LVRPSLLRSAELLAATIRRAGLTPAQLAGVYLVGGPSRMPLLATLLGRQLGVAPTTQDQPETAVAFG 344
+                     *****************************************************************99 PP
+
+>> YP_003762942.1  molecular chaperone 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   98.1   0.0   1.8e-31   1.9e-28       5     348 ..       5     373 ..       1     382 [. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 98.1 bits;  conditional E-value: 1.8e-31
+         hsp_ref   5 lGidlGttnsa.aavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisamilq 98 
+                     + +d+Gt+ ++ +a + g +p++++  +G+  + s v  + dg ++vG+ a rqa  +P +     kr++   + ++ l ++  +  ++   +l 
+  YP_003762942.1   5 VAVDFGTSSTCvVASVNGREPQVVV-IDGQPLMSSAVYAAADGTLFVGQEAERQAAVDPSRYEPNPKRRID--EGELLLGENVLRVTDVVHAVLG 96 
+                     579****998835889999999987.68******************************************9..5567789999999********* PP
+
+         hsp_ref  99 kikkdaeaylGe.evekavitvPayfnd.nqrqatkdaGeiaGleveriinePtaaslayGl.....dkeekd..........qkilvydlGGGt 176
+                     +  ++a    G+ ev+  v+t Pa +   + r   + aG +a  ev  ++ eP aa++ +       d  + d          + + v dlGGGt
+  YP_003762942.1  97 RAVSEARRLAGDaEVDLLVLTHPADWGAiRTRLLRQAAGGLAR-EV-ALVPEPVAAAVYHAAtfapqD-VKDDrtvefsgrpgEALAVLDLGGGT 188
+                     ***********85799********9976256777777888874.65.589******986543112222.222311112222224568******** PP
+
+         hsp_ref 177 ldvsil.........el.g...ggvfevlstsGdtqlGGddldeaiidyladefkkeeGi...dlre.....dkaalqrlkdaaekakielssvl 250
+                     +dvs++         +  g    g f+vl+t Gd  +GG d+d+a++++l +    ++     +l e     d+   + l++    ak  ls ++
+  YP_003762942.1 189 VDVSVVrrlppdparDRaGrpqRGGFQVLATRGDPAFGGADIDQALLEHLGSLVSAADPAawrELVEgrelaDRRRRRVLRQDVRGAKETLSRHA 283
+                     *****94333333222222222589************************96554443322111333311122566666799999*********** PP
+
+         hsp_ref 251 eteinlPfitatdsgpkhlelkltrakleelvedlvertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeava 345
+                      t++ +P        p   + ++tr  le+l+   + rtv+ +  a+ da+l +++++ + lvGGs+r+P++  lv+e +G  p +  +P+ +va
+  YP_003762942.1 284 YTDVPMP--------PPFADAHVTREDLERLIAAPLGRTVELTVAAIGDAGLRPKQLTAIFLVGGSSRIPMISRLVHERTGVVPTSLDQPETVVA 370
+                     ****999........6677899***************************************************************9999999999 PP
+
+         hsp_ref 346 lGa 348
+                      Ga
+  YP_003762942.1 371 RGA 373
+                     997 PP
+
+>> YP_003763703.1  molecular chaperone DnaK-like protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.2   0.0   9.3e-09   9.5e-06       4     138 ..       4     146 ..       1     160 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 23.2 bits;  conditional E-value: 9.3e-09
+         hsp_ref   4 ilGidlGttnsaaavle..g...gkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeis 93 
+                     +lGid+    + aa     g   g+p+ +   e + +  s +   ++g +l G++a +   + P + ++   r++G +d  + +eg+ + P+ ++
+  YP_003763703.1   4 VLGIDVAQGRTHAATCRrqGpgwGEPEPLWLGERSPAAASALFLDDEGYLLTGDAAAQAGAQVPSRLLTGFHRRIG-DDVPMLVEGEPFPPETLT 97 
+                     6666665444444443311333356666666777778888999999******************************.99**************** PP
+
+         hsp_ref  94 amilqkikkdaeaylGeevekavitvPa....yfndnqrqatkdaGeia 138
+                     +++++ i + a + +G + ++ v+t P     y  d  r+a  daG  a
+  YP_003763703.1  98 TVLVEGIAEHAANLFGGPPQHLVLTHPGdwggYRRDVLRRALADAGFTA 146
+                     ***************************7333366667777777776544 PP
+
+>> YP_003764309.1  3-oxoacyl-ACP synthase 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   7.3e-05     0.075     273     345 ..      52     126 ..      28     163 .. 0.75
+   2 ?   -2.9   0.0      0.73   7.5e+02     293     311 ..     229     247 ..     223     265 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 7.3e-05
+         hsp_ref 273 ltrakleelvedlvertvapiekaledaklsksdidkvil..vGGstrmPavkelveellGkepeknvdPdeava 345
+                     +   ++ e  e l + +va+ + aleda++++s++d vil     +t +P    +v   +G  +  + d + a a
+  YP_003764309.1  52 IIERRFAEKDESLTDFAVAAGKAALEDAGVDPSEVDTVILpnCTMPTLIPNAAAQVAARIGIPSPGAFDLNAACA 126
+                     555677777788899999999*******************4456799**********999998877777665554 PP
+
+  == domain 2  score: -2.9 bits;  conditional E-value: 0.73
+         hsp_ref 293 iekaledaklsksdidkvi 311
+                       +ale a+l++sd+d +i
+  YP_003764309.1 229 AMQALEVAGLKPSDVDVLI 247
+                     4699***********9776 PP
+
+>> YP_003762961.1  D-xylulose kinase 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.0   0.00021      0.22     280     353 ..     347     419 ..     331     425 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.00021
+         hsp_ref 280 elvedlvertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqag 353
+                     +l +  ve ++  +   l+  + +  d+++v+l+GG ++  av+ +   ++G  ++   +  e valGaa qa+
+  YP_003762961.1 347 NLARSAVEGMLCGLAAGLDAVRAHGLDVQRVLLIGGGAQSRAVRAVAPLVFGVPVQ-LPEVAEYVALGAARQAA 419
+                     56677777778888888888899999*****************9998888887665.56889*********997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       9228  (3036290 residues searched)
+Passed MSV filter:                       271  (0.0293671); expected 184.6 (0.02)
+Passed bias filter:                      199  (0.0215648); expected 184.6 (0.02)
+Passed Vit filter:                        28  (0.00303424); expected 9.2 (0.001)
+Passed Fwd filter:                         9  (0.000975293); expected 0.1 (1e-05)
+Initial search space (Z):               9228  [actual number of targets]
+Domain search space  (domZ):               9  [number of targets reported over threshold]
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.06
+# Mc/sec: 27116.10
+//
+[ok]

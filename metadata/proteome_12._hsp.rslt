@@ -1,0 +1,221 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  metadata/hsp.hmm
+# target sequence database:        proteomes/proteome_12.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hsp_ref  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+   8.9e-287  950.4  14.9   6.7e-253  838.5   9.4    2.0  2  WP_011957951.1  molecular chaperone DnaK 
+     3e-272  902.4  13.4   8.9e-241  798.5   6.9    2.0  2  WP_011958160.1  molecular chaperone DnaK 
+    7.3e-13   45.7   4.5    3.8e-11   40.0   4.5    2.7  1  WP_011955291.1  rod shape-determining protein 
+    7.5e-10   35.7   5.6    1.3e-08   31.6   5.6    2.2  1  WP_011956039.1  rod shape-determining protein 
+    0.00017   18.0   0.2     0.0011   15.4   0.0    1.9  2  WP_011959219.1  carbohydrate kinase 
+    0.00071   16.0   3.9     0.0047   13.3   0.5    2.8  3  WP_011958489.1  cell division protein FtsA 
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_011957951.1  molecular chaperone DnaK 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.2   0.2   8.2e-37   6.3e-34       1      89 [.       1      88 [.       1      94 [. 0.92
+   2 !  838.5   9.4  8.7e-256  6.7e-253      82     591 ..     105     613 ..      95     622 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 115.2 bits;  conditional E-value: 8.2e-37
+         hsp_ref  1 mekilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytP 89
+                    m ki+GidlGttns++av+egg+p++ipnaeG+rttPsvvaf+k+ge+lvG++akrqa  nP+nt +sikr +G  ++  +  ++e  P
+  WP_011957951.1  1 MPKIVGIDLGTTNSVVAVMEGGDPVVIPNAEGNRTTPSVVAFTKNGERLVGQTAKRQATINPDNTFYSIKRFIG-RNFDETTVEREMVP 88
+                    67************************************************************************.77766666666666 PP
+
+  == domain 2  score: 838.5 bits;  conditional E-value: 8.7e-256
+         hsp_ref  82 legkeytPqeisamilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGt 176
+                     ++gkey Pqeisam+lqk+k+daeaylGe+v+kavitvPayfnd+qrqatkdaG+iaGlev riinePtaa+layGld ++kd++ilv+dlGGGt
+  WP_011957951.1 105 VTGKEYAPQEISAMVLQKLKTDAEAYLGEPVTKAVITVPAYFNDSQRQATKDAGKIAGLEVLRIINEPTAAALAYGLD-KKKDETILVFDLGGGT 198
+                     79****************************************************************************.7899************ PP
+
+         hsp_ref 177 ldvsilelgggvfevlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsgpkhlel 271
+                     +dvs+le+g+gv+ev++t+Gdt+lGGdd+d++i+++l+def+k++Gidl++d++alqrlk+aaekakielss+ eteinlPfita++sgpkhl++
+  WP_011957951.1 199 FDVSVLEVGDGVVEVKATNGDTHLGGDDYDQRIVNWLIDEFRKDQGIDLSKDRQALQRLKEAAEKAKIELSSMSETEINLPFITADASGPKHLQM 293
+                     *********************************************************************************************** PP
+
+         hsp_ref 272 kltrakleelvedlvertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqagvlaGevkdivlld 366
+                     +l+rak+e+l+ dl er ++p  +al+da+l++ d+d+v+lvGGstrmP+v +lv++l+Gkep+++v+Pde+va+Gaaiqagvl+G+vkd+vlld
+  WP_011957951.1 294 RLSRAKFEQLTADLTERLKGPFFQALKDAGLKPGDLDEVVLVGGSTRMPVVIDLVRKLTGKEPNRSVNPDEVVAIGAAIQAGVLGGDVKDVVLLD 388
+                     *********************************************************************************************** PP
+
+         hsp_ref 367 vtPlslgietlGgvaerliernttiPtkkskvfttaadnqtsveihvlqGerelaeeneslGrfkltgipPaPrGvPqievtfdidanGilnvea 461
+                     vtPlslg+etlGgv+++liernttiPt+ks++f+taad qt+v+ihvlqGerela++n +lGrf+l+gipPaPrGvPqievtfdidanGilnv+a
+  WP_011957951.1 389 VTPLSLGVETLGGVMTKLIERNTTIPTRKSEIFSTAADGQTAVDIHVLQGERELAADNMTLGRFRLEGIPPAPRGVPQIEVTFDIDANGILNVSA 483
+                     *********************************************************************************************** PP
+
+         hsp_ref 462 kdlgtgkeesitieasaklsdeeiermkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdedqkekveaaiedlkevleekdaee 556
+                     +d++tgke++iti+as++ls+eeierm +dae ha edk+r+e ie++n+++sl++++ek l+e +dkvd   k++ve  i+dl+e++++++  +
+  WP_011957951.1 484 RDKATGKEQRITITASTNLSKEEIERMIRDAELHAAEDKRRRELIELKNQSDSLAYQSEKSLNELGDKVDPALKSRVEGLIKDLREAISQENESR 578
+                     *********************************************************************************************** PP
+
+         hsp_ref 557 ikaktealseevqeigtklyqkaaaegaaaaegag 591
+                     +++   +l++++++++++ y +a  +ga a++g++
+  WP_011957951.1 579 MRSISSELQQAMYQVSQSAYTSAGGDGAGAKKGKD 613
+                     *********************99888766665544 PP
+
+>> WP_011958160.1  molecular chaperone DnaK 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  108.2   0.4   1.1e-34   8.5e-32       1      75 [.       1      75 [.       1      87 [. 0.95
+   2 !  798.5   6.9  1.2e-243  8.9e-241      77     582 ..     100     605 ..      94     612 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 108.2 bits;  conditional E-value: 1.1e-34
+         hsp_ref  1 mekilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGe 75
+                    m ki+GidlGttns++av+egg+p++i+naeG+r tPsvva  k ge+lvG++a+rqav nPe+ti+s+kr +G 
+  WP_011958160.1  1 MGKIIGIDLGTTNSVVAVMEGGEPVVIANAEGSRLTPSVVAINKAGERLVGQVARRQAVVNPEHTIFSVKRFIGR 75
+                    78**********************************************************************995 PP
+
+  == domain 2  score: 798.5 bits;  conditional E-value: 1.2e-243
+         hsp_ref  77 dykvklegkeytPqeisamilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvyd 171
+                     d  v+l g++y Pqeisa++lqk+k+daeaylGe+v++avitvPayfnd+qrqat+daG iaGl+v+riinePta++layGld++ +++ i vyd
+  WP_011958160.1 100 DAWVHLAGRDYSPQEISAFVLQKLKADAEAYLGEPVTQAVITVPAYFNDSQRQATRDAGRIAGLDVVRIINEPTASALAYGLDQNRHNHLIAVYD 194
+                     67799****************************************************************************************** PP
+
+         hsp_ref 172 lGGGtldvsilelgggvfevlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsgp 266
+                     lGGGt+d+silelg+gvfev +t+Gdt+lGGdd+d++i+d++a+efkke+Gidlr d++alqrlk+aaekak els+vl+t+i lPfita++sgp
+  WP_011958160.1 195 LGGGTFDISILELGDGVFEVRATNGDTHLGGDDFDQRIMDWMATEFKKETGIDLRTDRTALQRLKEAAEKAKQELSTVLQTDISLPFITADASGP 289
+                     *********************************************************************************************** PP
+
+         hsp_ref 267 khlelkltrakleelvedlvertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqagvlaGevkd 361
+                     +hl+l+ltra+le+l+ dl+ert +p+++al da++ ++did v+lvGG trmPav+e+v++++ +ep+++v+Pde+va+GaaiqagvlaGev +
+  WP_011958160.1 290 RHLNLTLTRARLEQLTGDLIERTIGPMRQALVDAGVRPNDIDAVVLVGGQTRMPAVQEMVRRFFNREPHRGVNPDEVVAIGAAIQAGVLAGEVGN 384
+                     *********************************************************************************************** PP
+
+         hsp_ref 362 ivlldvtPlslgietlGgvaerliernttiPtkkskvfttaadnqtsveihvlqGerelaeeneslGrfkltgipPaPrGvPqievtfdidanGi 456
+                     +vlldvtPl+lgietlGgv+++liernttiPt+ks+vf+ta+dnq+sveihvlqGer  a+ n+slGrf l+gipPaPrGvPqievtfdidanG+
+  WP_011958160.1 385 VVLLDVTPLTLGIETLGGVMTPLIERNTTIPTRKSQVFSTASDNQSSVEIHVLQGERAEARANKSLGRFVLDGIPPAPRGVPQIEVTFDIDANGL 479
+                     *********************************************************************************************** PP
+
+         hsp_ref 457 lnveakdlgtgkeesitieasaklsdeeiermkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdedqkekveaaiedlkevlee 551
+                     l v+a d+ tg +++iti+as++ls++ei+rm  +a+++aeed++r++ i +rn a+s++++ae+ l ea++++de  + +++++i  ++ ++e+
+  WP_011958160.1 480 LSVSATDKRTGVAQHITITASSGLSEDEIQRMIAEADQYAEEDRQRRDLIAARNAADSVVYNAERALREAGETADETVRVRIQERIAAVRLAIEG 574
+                     *********************************************************************************************** PP
+
+         hsp_ref 552 kdaeeikaktealseevqeigtklyqkaaae 582
+                     +d +ei+++t +l+ ++q++++    +++++
+  WP_011958160.1 575 DDRNEIRNRTAELTVALQQLAQMTAARSDQD 605
+                     *******************987655443333 PP
+
+>> WP_011955291.1  rod shape-determining protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.0   4.5     5e-14   3.8e-11       1     349 [.       1     317 [.       1     324 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 40.0 bits;  conditional E-value: 5e-14
+         hsp_ref   1 mekilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisam 95 
+                     m+k +GidlGt+n  +   + g+  ++       + Psvva s +++++    a   a+   e   + + r +   d    + +      +i+  
+  WP_011955291.1   1 MAKKIGIDLGTANVLVY--VKGRGIVL-------AEPSVVAISTKDNRIKAVGADALAMLGREPESIEVIRPLR--D--GVIADY-----DITEA 77 
+                     67888999999886543..34555444.......3499999988888775555555555544444444555555..1..123333.....44445 PP
+
+         hsp_ref  96 ilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfe 190
+                     +l+   + a   +  +  + ++ +Pa       +a + a e aG     +i eP aa++   +    +    l+ d+GGGt +v+++ l + v+ 
+  WP_011955291.1  78 MLRYFIRKAMGPFSFSKPDVMVCIPAGVTTVEMRAVRQAAEAAGARHAYLIREPLAAAIGANIP-VAQPSGNLIIDIGGGTTEVAVISLNDIVV- 170
+                     55555555555555555678899****************************************9.5666677899***************9874. PP
+
+         hsp_ref 191 vlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsgpkhl..elkltrakleelve 283
+                         s   ++GG+ +de+i  y+  +++   G             + +ae  kie+ s l  e  l     + ++   l   +++   ++ + ++
+  WP_011955291.1 171 ----SHSVRVGGNKFDETIAAYVKRKYNVLIG-------------ERTAESIKIEIGSALPLERPLSMQVRGRDQVAGLprTIEINSNEITDALQ 248
+                     ....45689*************9988865444.............3479**********999999998888888777772245667788888899 PP
+
+         hsp_ref 284 dlvertvapiekaleda..klsksdidk.vilvGGstrmPavkelveellGkepeknvdPdeavalGaa 349
+                     + +e + +++++ l+++  +ls++ idk +i+ GG + +  ++el+ +++G   + + +P ++va+G+ 
+  WP_011955291.1 249 EPLEAVIGAVRRVLAETppELSSDIIDKgMIMTGGGSMLRRINELLTDVTGVPCYVADQPANCVAIGTG 317
+                     999***********9874478888899878999**********************************86 PP
+
+>> WP_011956039.1  rod shape-determining protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.6   5.6   1.7e-11   1.3e-08       5     218 ..      17     209 ..      13     224 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 31.6 bits;  conditional E-value: 1.7e-11
+         hsp_ref   5 lGidlGttnsaaavleggkptiipnaeGarttPsvvafskdge..klvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisamil 97 
+                     lGidlGt+n+ + v   gk  +i+        Psvva  ++ +  k vG  ak  + + P n ia    k G       + + +   + +  +i 
+  WP_011956039.1  17 LGIDLGTANTLVHV--RGKGIVIS-------EPSVVAIDRKTKevKAVGAEAKAMVGKTPANIIAVRPLKDG------VIADFDVVEKMLKYFI- 95 
+                     899***99987665..67778875.......49999997665522679999999999999988776556666......3444444444444444. PP
+
+         hsp_ref  98 qkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfevl 192
+                      k  +d    +  +  + v+ vP+       +a++da   a      +++eP aa++  Gl   ++    ++ d+GGGt +v+++ lgg v +  
+  WP_011956039.1  96 GKA-HDRSLGIVSPRPRVVVGVPSGVTQVEMRAARDAALNANAREAYVVEEPMAAAIGAGLP-VDEPVGSMIVDIGGGTTEVAVISLGGIVINH- 187
+                     343.33344445677899*******************************************9.6677777889***************998753. PP
+
+         hsp_ref 193 stsGdtqlGGddldeaiidyladefk 218
+                           +  Gd++deaii++   e++
+  WP_011956039.1 188 ----SIRTAGDEIDEAIIQFARREYN 209
+                     ....445678899*****99888876 PP
+
+>> WP_011959219.1  carbohydrate kinase 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   0.0     0.052        40       4      20 ..       6      22 ..       3      38 .. 0.69
+   2 !   15.4   0.0   1.4e-06    0.0011     309     357 ..     404     451 ..     352     456 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 0.3 bits;  conditional E-value: 0.052
+         hsp_ref  4 ilGidlGttnsaaavle 20
+                    +lGid+Gttn  a v+ 
+  WP_011959219.1  6 LLGIDVGTTNIKALVFD 22
+                    57888888887665543 PP
+
+  == domain 2  score: 15.4 bits;  conditional E-value: 1.4e-06
+         hsp_ref 309 kvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqagvlaG 357
+                      + ++GG tr+P+   +  ++lG+ p + +d de+valGaa+ +g+ aG
+  WP_011959219.1 404 TIRVIGGGTRLPVWLGIKADVLGR-PLQVLDMDESVALGAALLGGLAAG 451
+                     56789******************7.6789****************9888 PP
+
+>> WP_011958489.1  cell division protein FtsA 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.1       0.1        78       3      18 ..       5      20 ..       3      34 .. 0.84
+   2 !   13.3   0.5   6.1e-06    0.0047     138     188 ..     176     225 ..     170     246 .. 0.83
+   3 ?    2.0   0.0     0.015        12     273     334 ..     288     349 ..     281     359 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 0.1
+         hsp_ref  3 kilGidlGttnsaaav 18
+                     i+Gid+Gtt  +  v
+  WP_011958489.1  5 TIVGIDVGTTKVCTIV 20
+                    69********999876 PP
+
+  == domain 2  score: 13.3 bits;  conditional E-value: 6.1e-06
+         hsp_ref 138 aGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggv 188
+                     +G+e+  ++ +P aa  a  l  ++kd+ +++ d+GGGt d++++  gg  
+  WP_011958489.1 176 TGVEIDDLVLQPLAAGEAV-LSADDKDRGVVLVDIGGGTTDIAVFAQGGIW 225
+                     69999**********9996.6668********************9887644 PP
+
+  == domain 3  score: 2.0 bits;  conditional E-value: 0.015
+         hsp_ref 273 ltrakleelvedlvertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkep 334
+                     ++r  l+++++   e  ++ i + ++ ++++      ++l GG++++P + el++++lG  +
+  WP_011958489.1 288 ISRRMLNQVLQARAEELTELIYNEIRRSGYEGLLPAGIVLTGGTAQLPRLDELMRDMLGIPV 349
+                     55566666666666666666666666666666666789********************9866 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       4607  (1629089 residues searched)
+Passed MSV filter:                       144  (0.0312568); expected 92.1 (0.02)
+Passed bias filter:                      101  (0.0219232); expected 92.1 (0.02)
+Passed Vit filter:                        15  (0.00325591); expected 4.6 (0.001)
+Passed Fwd filter:                         6  (0.00130237); expected 0.0 (1e-05)
+Initial search space (Z):               4607  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.05
+# Mc/sec: 17566.78
+//
+[ok]

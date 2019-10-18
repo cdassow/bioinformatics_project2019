@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  metadata/hsp.hmm
+# target sequence database:        proteomes/proteome_14.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hsp_ref  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+          0 1060.4  26.7          0 1060.2  26.7    1.0  1  WP_004041481.1  MULTISPECIES: molecular chaperone DnaK 
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_004041481.1  MULTISPECIES: molecular chaperone DnaK 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 1060.2  26.7         0         0       1     617 [.       3     624 ..       3     625 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 1060.2 bits;  conditional E-value: 0
+         hsp_ref   1 mekilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisam 95 
+                     ++kilGidlGttnsa+av+egg+p+ii+naeG+rttPsvvaf++dge+lvG+pak+qa++nPe+ti sikr+mGe+ y+v++eg+eytP++isam
+  WP_004041481.1   3 SNKILGIDLGTTNSAFAVMEGGDPEIIVNAEGDRTTPSVVAFTDDGERLVGKPAKNQAIQNPERTIRSIKRHMGEDGYTVDIEGEEYTPEQISAM 97 
+                     58********************************************************************************************* PP
+
+         hsp_ref  96 ilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfe 190
+                     ilqkik+dae+ylG+e++kavitvPayfnd+qrqatkdaGeiaGl+veri+nePtaas+ayGld +e++q++lvydlGGGt+dvs+l+lgggv+e
+  WP_004041481.1  98 ILQKIKRDAEDYLGDELQKAVITVPAYFNDKQRQATKDAGEIAGLDVERIVNEPTAASMAYGLD-DESNQTVLVYDLGGGTFDVSVLDLGGGVYE 191
+                     ****************************************************************.9***************************** PP
+
+         hsp_ref 191 vlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsgpkhlelkltrakleelvedl 285
+                     v++t+Gd++lGGdd+deaii++la+ef++++Gidlred++alqrlkdaae+akielss++et+inlPfitatdsgp+hle++ltrak+e+l+ dl
+  WP_004041481.1 192 VVATNGDNDLGGDDWDEAIIEWLATEFENDHGIDLREDRQALQRLKDAAEEAKIELSSRKETTINLPFITATDSGPVHLEYDLTRAKFESLTADL 286
+                     *********************************************************************************************** PP
+
+         hsp_ref 286 vertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqagvlaGevkdivlldvtPlslgietlGgv 380
+                     ++rtv+p+e+aleda+++k did+vilvGGstrmP+v+++veellG+ep+k+v+PdeavalGaaiq+gvl+Gev+divlldvtPlslgie++Gg+
+  WP_004041481.1 287 IDRTVEPTEQALEDAGYDKGDIDDVILVGGSTRMPQVRDKVEELLGSEPKKSVNPDEAVALGAAIQGGVLGGEVDDIVLLDVTPLSLGIEVKGGL 381
+                     *********************************************************************************************** PP
+
+         hsp_ref 381 aerliernttiPtkkskvfttaadnqtsveihvlqGerelaeeneslGrfkltgipPaPrGvPqievtfdidanGilnveakdlgtgkeesitie 475
+                     +erlie+nttiPt++sk+fttaadnqt+v+++v+qGere+ae+ne+lG+f+l+gipPaP+G+Pqiev f+id+nGi+nv+a+d+g+g++esitie
+  WP_004041481.1 382 FERLIEKNTTIPTEESKIFTTAADNQTTVQVRVFQGEREMAEDNELLGEFTLSGIPPAPAGTPQIEVGFNIDENGIVNVSAEDKGSGNAESITIE 476
+                     *********************************************************************************************** PP
+
+         hsp_ref 476 asaklsdeeiermkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdedqkekveaaiedlkevleekda..eeikaktealseev 568
+                     ++a+lsdeei+rm+++ae+haeedk+r++ +e+rneae ++q+ae+llee+e++vd++ ++++eaa+ed+++vle++da  +e++++te+ls+e+
+  WP_004041481.1 477 GGAGLSDEEIDRMQQEAEQHAEEDKERRRAVEARNEAEGAVQRAETLLEENEENVDDELRADIEAAVEDVEAVLEDDDAstDELEDVTEELSKEL 571
+                     ******************************************************************************989************** PP
+
+         hsp_ref 569 qeigtklyqkaaae....gaaaaegaggaagsgdakgedeevvdadfedvdde 617
+                     qeig+++yq++a++       a +gag+a+g g+a+ ed   +dadf++ d++
+  WP_004041481.1 572 QEIGKRMYQQQAQAqaggPGGAGAGAGAAGGPGGADPEDFVDADADFDEDDED 624
+                     *********99988444334455566667777788888888889999988876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       3827  (1112022 residues searched)
+Passed MSV filter:                       230  (0.0600993); expected 76.5 (0.02)
+Passed bias filter:                      103  (0.026914); expected 76.5 (0.02)
+Passed Vit filter:                        22  (0.00574863); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.000783904); expected 0.0 (1e-05)
+Initial search space (Z):               3827  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.03
+# Mc/sec: 19699.03
+//
+[ok]
