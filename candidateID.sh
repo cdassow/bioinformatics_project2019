@@ -1,15 +1,15 @@
 #Identifying a candidate pH-resistant methanogenic Archaea; there are 50 candidates,
 #in proteomes directory how many HSP70, binary do they have/not have mcrA
-#USAGE bash candidateID.sh
+#USAGE bash candidateID.sh relative_pathway_to_gene1 [./ref_sequences/mcrAgene_*.fasta] relative_pathway_to_gene2 [./ref_sequences/hsp70gene_*.fasta] relative_pathway_to_proteomes [./proteomes/proteome*.fasta]
 
 #align sequences and build HMM
-cat ./ref_sequences/mcrAgene_*.fasta | ../muscle -out alignedmcrA.fasta
+cat "$1" | ../muscle -out alignedmcrA.fasta
  ../hmmer3/bin/hmmbuild mcrA.hmm alignedmcrA.fasta
-cat ./ref_sequences/hsp70gene_*.fasta | ../muscle -out alignedhsp70.fasta
+cat "$2" | ../muscle -out alignedhsp70.fasta
  ../hmmer3/bin/hmmbuild hsp70.hmm alignedhsp70.fasta
 
 #search through proteomes to find matches using HMM and sort to find best matches
-for file in ./proteomes/proteome*.fasta
+for file in "$3"
  do
  shortFile=$(echo $file | cut -d '/' -f 3 | cut -d '.' -f 1)
  result=$(../hmmer3/bin/hmmsearch mcrA.hmm $file | grep -E "Domain search space" | tr "\n" " " | cut -d : -f 2 | cut -d '[' -f 1)
