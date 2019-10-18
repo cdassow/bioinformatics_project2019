@@ -1,6 +1,7 @@
-#This script will flexibly and efficiently search genomes for the HSP70 and McrA genes and generate a summary table collating the results of all searches
+# This script will flexibly and efficiently search genomes for the HSP70 and McrA genes and generate a summary table collating the results of all searches and output a text file list with strains of interest containing both hsp70 and mcrA genes
 # Usage: bash MasterScript.sh
-
+# This Script should be run from the directory  ~/Private/Biocomputing/bioinformatics/bioinformatics_project2019
+# This directory should contain directories ref_sequences and proteomes it should also contain muscle and 'ham' our nickname for hmmer
 ############################################
 # STEP 1 : ALIGNMENT #
 ############################################
@@ -41,8 +42,8 @@ echo "proteme_name hsp70_matches mcrA_matches" > Summary1.txt
 for tbl in {01..50}
 do
   x=$(echo proteome_$tbl)
-  y=$(~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/hsp70_tbl_$tbl | grep -v "#" | wc -l)
-  z=$(~/Private/Biocomputing/bioinformatics/bioinformatics_project2019/mcrA_tbl_$tbl | grep -v "#" | wc -l)
+  y=$(cat ./hsp70_tbl_$tbl | grep -v "#" | wc -l)
+  z=$(cat ./mcrA_tbl_$tbl | grep -v "#" | wc -l)
   echo "$x $y $z" >> Summary1.txt
 done
 
