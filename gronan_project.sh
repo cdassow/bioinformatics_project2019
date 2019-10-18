@@ -67,7 +67,7 @@ echo "Beginning hit counting"
 for fileS in *hits.csv
 do
 	cat $fileS | tr "_[0-9][0-9]" " " | tr -s " " > $fileS
-	for n in {1..$5}
+	for n in (( a=1; a<=$5; a++ ))
 	do
 		cat $fileS | grep -h $(cat $fileS | head -n 1 | cut -d " " -f 1) > gene_$n-$fileS
 		sed '/$(cat $file | head -n 1 | cut -d " " -f 1)/d' $fileS
