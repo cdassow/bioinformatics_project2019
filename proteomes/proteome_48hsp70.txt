@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  hsp70build.hmm
+# target sequence database:        ./proteomes/proteome_48.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hspmuscle  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+          0 1045.9  25.7          0 1045.8  25.7    1.0  1  WP_012037073.1  molecular chaperone DnaK 
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_012037073.1  molecular chaperone DnaK 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 1045.8  25.7         0         0       1     617 [.       1     622 [.       1     623 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 1045.8 bits;  conditional E-value: 0
+       hspmuscle   1 mekilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisam 95 
+                     m+kilGidlGt+ns aa++eggkp+iip+aeGar++Psvvaf+k+ge+lvGe+a+rqavtnPe+ti++ikrkmG +dykv+++gk+ytPqeisam
+  WP_012037073.1   1 MSKILGIDLGTSNSEAAIMEGGKPVIIPSAEGARMFPSVVAFTKTGERLVGEAARRQAVTNPERTIIAIKRKMG-TDYKVEIDGKKYTPQEISAM 94 
+                     79************************************************************************.******************** PP
+
+       hspmuscle  96 ilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfe 190
+                     ilqkik+daeay+Ge+++kavitvPayfndnqrqatkdaG+iaGlev r+inePtaa+la+Gld ++ +qkilv+dlGGGtldv+i+e+g+gvfe
+  WP_012037073.1  95 ILQKIKQDAEAYIGEKITKAVITVPAYFNDNQRQATKDAGTIAGLEVLRVINEPTAAALAFGLD-KKGSQKILVFDLGGGTLDVTIMEMGDGVFE 188
+                     ****************************************************************.67899************************* PP
+
+       hspmuscle 191 vlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsgpkhlelkltrakleelvedl 285
+                     vlstsGdtqlGG+d+d++iidy+a++fkk++Gidlr+dk+a+qrl+daaekakielss+l+t++nlPfita++sgpkhl+++ltra+leelv+++
+  WP_012037073.1 189 VLSTSGDTQLGGTDMDNKIIDYIASQFKKDTGIDLRNDKMAMQRLRDAAEKAKIELSSTLQTQVNLPFITADASGPKHLDMMLTRATLEELVREV 283
+                     *********************************************************************************************** PP
+
+       hspmuscle 286 vertvapiekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqagvlaGevkdivlldvtPlslgietlGgv 380
+                     ver++ap+++a++dakl+ ++id++ilvGG+trmP++ e++++++Gkepe+++dP+e+va+Ga+iq+gvlaGevkd++lldvtPlslgietlG+v
+  WP_012037073.1 284 VERCYAPMRQAISDAKLTANQIDRIILVGGPTRMPIIIETIKKFFGKEPERGIDPMECVAMGASIQGGVLAGEVKDLLLLDVTPLSLGIETLGNV 378
+                     *********************************************************************************************** PP
+
+       hspmuscle 381 aerliernttiPtkkskvfttaadnqtsveihvlqGerelaeeneslGrfkltgipPaPrGvPqievtfdidanGilnveakdlgtgkeesitie 475
+                     a+rliernttiPt+ks+vf+taadnqtsveihv+qGer++a +n++lGrf+l gipPaPrG+PqievtfdidanGilnv+akdlgtgke++iti+
+  WP_012037073.1 379 ATRLIERNTTIPTRKSQVFSTAADNQTSVEIHVIQGERPMAYDNTTLGRFHLIGIPPAPRGIPQIEVTFDIDANGILNVKAKDLGTGKEQAITIT 473
+                     *********************************************************************************************** PP
+
+       hspmuscle 476 asaklsdeeiermkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdedqkekveaaiedlkevleekdaeeikaktealseevqe 570
+                     as+kl++++ierm+kdaek+a ed ++ke+ ev+n+a++l+++aek+l +a+dk+++dqke+v++  + l+e+ ++ d+e+ika+t +l+++++e
+  WP_012037073.1 474 ASTKLDKSDIERMVKDAEKFAAEDAAKKEKAEVMNQADTLLYSAEKTLADAGDKITADQKERVTKGSDALREAQKTGDIEKIKAATADLTKTMNE 568
+                     *********************************************************************************************** PP
+
+       hspmuscle 571 igtklyqkaaae.......gaaaaegaggaagsgdakgedeevvdadfedvdde 617
+                     ++t lyq+a+++       ++aa++++gg+++sg++ g+d +vvdad+e+v+d+
+  WP_012037073.1 569 VATVLYQAAQQQyqqqqaaEQAAQQQSGGQQASGSNPGKDPNVVDADYEVVNDK 622
+                     *******999888888777777778888899999999**************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       3039  (878464 residues searched)
+Passed MSV filter:                       121  (0.0398157); expected 60.8 (0.02)
+Passed bias filter:                       70  (0.0230339); expected 60.8 (0.02)
+Passed Vit filter:                         9  (0.0029615); expected 3.0 (0.001)
+Passed Fwd filter:                         1  (0.000329056); expected 0.0 (1e-05)
+Initial search space (Z):               3039  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 14229.61
+//
+[ok]

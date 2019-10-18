@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  mcrabuild.hmm
+# target sequence database:        ref_sequences/mcrAgene_03.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       mcramuscle  [M=568]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.5e-265  867.1   4.5     4e-265  866.9   4.5    1.0  1  AKB30557.1  Methyl coenzyme M reductase alpha subunit [Methan
+
+
+Domain annotation for each sequence (and alignments):
+>> AKB30557.1  Methyl coenzyme M reductase alpha subunit [Methanosarcina siciliae T4/M]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  866.9   4.5    4e-265    4e-265      20     568 .]      27     570 .]       7     570 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 866.9 bits;  conditional E-value: 4e-265
+  mcramuscle  20 qgqdvqsdtaeyykyngvrqsprkmefmkasraiemdrgismydperahlggipmgqrqlmtyevsgtgvfvegddlhfvnnaamqqfwddirrtvivn 118
+                  g d+   t ++    g  q  rk e++ka + i   rgi++y+p   h+ g p+gqr +  y vsgt ++ e ddlh+vnnaamqq+wddirrt iv 
+  AKB30557.1  27 AGGDITGKTEKFL-RLGPEQDARKQEMIKAGKEIAEKRGIAFYNPM-MHM-GAPLGQRAITPYTVSGTDIVAEPDDLHYVNNAAMQQMWDDIRRTCIVG 122
+                 4666666665555.46899**************************6.577.57********************************************** PP
+
+  mcramuscle 119 mdlahqtlqkrlgkevtpetineylhilnhampgaavvqehmvethpglvddcyvkvftgdqeladdlepqfvldveklfpakqaealsaavgkslwqa 217
+                 +d+ah+tl+krlgkevtpetin yl  lnhampgaavvqe mvethp lvddcyvk+ftgd+elad+++ q+v++++k+f  +qa  + a++gk+ wqa
+  AKB30557.1 123 LDMAHETLEKRLGKEVTPETINHYLETLNHAMPGAAVVQEMMVETHPALVDDCYVKIFTGDDELADEVDKQYVININKMFSEEQAAQIKASIGKTTWQA 221
+                 *************************************************************************************************** PP
+
+  mcramuscle 218 ihiptavsrtcdggttsrwsamqigmsfiaayrmcageaavadlsfaakhagviqmasllparrargpnepgglafglfsdivqtnrkypndpakasle 316
+                 ihipt vsrt dg  tsrw+amqigmsfi+ay mcageaavadlsfaakha ++ m  +lparrargpnepggl+fg +sdivqt r   +dpak +le
+  AKB30557.1 222 IHIPTIVSRTTDGAQTSRWAAMQIGMSFISAYAMCAGEAAVADLSFAAKHAALVSMGEMLPARRARGPNEPGGLSFGHLSDIVQTSRV-SKDPAKIALE 319
+                 *************************************************************************************985.79******** PP
+
+  mcramuscle 317 vvgagtmlydqiwlgsymsggvgftqyataaytdnildeftyygmdyikdkykvdwknpsandkvkptydivndmatevtlnameqyeqfptmmedhfg 415
+                 vvgag mlydqiwlgsymsggvgftqyataaytd+ild+ tyy +dyi+dky+    n  +++kvk t d+v+d+ate tl  +e ye+fpt +edhfg
+  AKB30557.1 320 VVGAGCMLYDQIWLGSYMSGGVGFTQYATAAYTDDILDNNTYYDVDYINDKYNG-AANLGTDNKVKATLDVVKDIATESTLYGIETYEKFPTALEDHFG 417
+                 ****************************************************96.57899999************************************ PP
+
+  mcramuscle 416 gsqragviaaasglttaiatgnsnaglngwylsmllhkdgwsrlgffgydlqdqcgsanslsirgdegaigelrgpnypnyamnvghqgeyaaivggsh 514
+                 gsqra v+aaasg++ a+atgn+nagl gwylsm +hk+ w rlgffg+dlqdqcg++n ls +gdeg   elrgpnypnyamnvghqg ya i   +h
+  AKB30557.1 418 GSQRATVLAAASGVACALATGNANAGLSGWYLSMYVHKEAWGRLGFFGFDLQDQCGATNVLSYQGDEGLPDELRGPNYPNYAMNVGHQGGYAGIAQAAH 516
+                 *************************************************************************************************** PP
+
+  mcramuscle 515 ygrgdawcfdprvkicfadpalkfdfaeprrefakgairefmpagersliipar 568
+                  grgda+ ++p +k+cfad  + f+faeprref +gairef+pagersliipa+
+  AKB30557.1 517 SGRGDAFTVNPLLKVCFADELMPFNFAEPRREFGRGAIREFVPAGERSLIIPAK 570
+                 ****************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (568 nodes)
+Target sequences:                          1  (570 residues searched)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.02s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10.57
+//
+[ok]
