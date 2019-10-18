@@ -1,0 +1,18 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NP_951095.1          -          aligned_hsp_genes    -           1.6e-284  942.5  20.1  4.4e-250  828.8  15.2   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
+NP_953138.1          -          aligned_hsp_genes    -            1.5e-12   44.2   3.2   3.4e-12   43.0   3.2   1.8   1   1   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951790.1          -          aligned_hsp_genes    -            8.9e-07   25.1   0.3   1.3e-06   24.6   0.3   1.2   1   0   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951094.1          -          aligned_hsp_genes    -             0.0099   11.8   0.7     0.013   11.4   0.7   1.1   1   0   0   1   1   1   1 heat shock protein GrpE 
+NP_951605.1          -          aligned_hsp_genes    -                  1    5.1  10.9       1.5    4.6  10.9   1.2   1   0   0   1   1   1   0 DNA mismatch repair ATPase MutS-2 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      ../ref_sequences/aligned_hsp_genes.hmm
+# Target file:     proteome_21.fasta
+# Option settings: ../../hmmer-3.2.1/bin/hmmsearch --tblout hspproteome_21.fasta.hm ../ref_sequences/aligned_hsp_genes.hmm proteome_21.fasta 
+# Current dir:     /afs/crc.nd.edu/user/e/epaietta/Private/bioinformatics_project2019/proteomes
+# Date:            Fri Oct 18 12:05:20 2019
+# [ok]

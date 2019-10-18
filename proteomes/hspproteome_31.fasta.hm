@@ -1,0 +1,20 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_053549228.1       -          aligned_hsp_genes    -           8.8e-283  936.8  23.7  4.8e-249  825.4  18.5   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
+WP_053550046.1       -          aligned_hsp_genes    -            1.2e-12   44.5   5.2   5.1e-12   42.4   5.2   1.9   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_053550968.1       -          aligned_hsp_genes    -            0.00063   15.7   0.3    0.0076   12.1   0.1   2.2   1   1   0   2   2   2   1 pilus assembly protein PilM 
+WP_053551643.1       -          aligned_hsp_genes    -             0.0023   13.8   0.7    0.0023   13.8   0.7   2.6   3   1   0   3   3   3   1 cell division protein FtsA 
+WP_053549249.1       -          aligned_hsp_genes    -             0.0026   13.7   0.2     0.094    8.5   0.0   2.0   2   0   0   2   2   2   2 ketoacyl-ACP synthase III 
+WP_053550303.1       -          aligned_hsp_genes    -             0.0069   12.3   0.1      0.01   11.7   0.1   1.2   1   0   0   1   1   1   1 4-hydroxy-3-methylbut-2-enyl diphosphate reductase 
+WP_082351077.1       -          aligned_hsp_genes    -              0.021   10.7   0.5     0.058    9.2   0.1   1.7   2   0   0   2   2   2   0 hypothetical protein 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      ../ref_sequences/aligned_hsp_genes.hmm
+# Target file:     proteome_31.fasta
+# Option settings: ../../hmmer-3.2.1/bin/hmmsearch --tblout hspproteome_31.fasta.hm ../ref_sequences/aligned_hsp_genes.hmm proteome_31.fasta 
+# Current dir:     /afs/crc.nd.edu/user/e/epaietta/Private/bioinformatics_project2019/proteomes
+# Date:            Fri Oct 18 12:05:22 2019
+# [ok]

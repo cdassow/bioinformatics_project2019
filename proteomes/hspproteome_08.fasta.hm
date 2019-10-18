@@ -1,0 +1,18 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_062403955.1       -          aligned_hsp_genes    -           3.2e-259  858.9  33.1  1.3e-256  850.2  33.1   2.0   1   1   0   1   1   1   1 molecular chaperone DnaK 
+WP_062405703.1       -          aligned_hsp_genes    -           6.4e-153  507.7  11.8  9.4e-152  503.9  11.8   1.9   1   1   0   1   1   1   1 Fe-S protein assembly chaperone HscA 
+WP_062406926.1       -          aligned_hsp_genes    -            5.9e-24   81.7   0.0   5.5e-19   65.3   0.0   2.0   2   0   0   2   2   2   2 Hsp70 family protein 
+WP_062408136.1       -          aligned_hsp_genes    -            9.3e-14   48.1   0.3   5.6e-13   45.5   0.0   2.2   3   0   0   3   3   3   1 rod shape-determining protein 
+WP_062406075.1       -          aligned_hsp_genes    -            1.3e-06   24.4   2.1    0.0024   13.7   0.1   3.1   3   1   1   4   4   4   2 cell division protein FtsA 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      ../ref_sequences/aligned_hsp_genes.hmm
+# Target file:     proteome_08.fasta
+# Option settings: ../../hmmer-3.2.1/bin/hmmsearch --tblout hspproteome_08.fasta.hm ../ref_sequences/aligned_hsp_genes.hmm proteome_08.fasta 
+# Current dir:     /afs/crc.nd.edu/user/e/epaietta/Private/bioinformatics_project2019/proteomes
+# Date:            Fri Oct 18 12:05:17 2019
+# [ok]
