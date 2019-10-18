@@ -69,9 +69,10 @@ do
 	cat $fileS | tr "_[0-9][0-9]" " " | tr -s " " > $fileS
 	for (( a=1; a<=$5; a++ ))
 	do
-		cat $fileS | grep -h $(cat $fileS | head -n 1 | cut -d " " -f 1) > gene_$n-$fileS
+		echo $a
+		cat $fileS | grep -h '$(cat $fileS | head -n 1 | cut -d " " -f 1)' > gene_$a-$fileS
 		sed '/$(cat $file | head -n 1 | cut -d " " -f 1)/d' $fileS
-		sum=$(cat gene_$n-$fileS | cut -d " " -f 2 | awk '{total = total + $1}END{print total}')
+		sum=$(cat gene_$a-$fileS | cut -d " " -f 2 | awk '{total = total + $1}END{print total}')
 		echo "Gene$n $sum" >> $(echo $fileS | cut -d "-" -f 1)-sums.csv
 	done
 	rm $fileS
