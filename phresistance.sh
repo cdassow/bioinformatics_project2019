@@ -1,4 +1,4 @@
-#This program searches fasta files for the presence of mcrA and hsp70 genes to indicate the presence of methanogens
+#This program searches fasta files for the presence of mcrA and hsp70 genes to indicate the presence of pH-resistant methanogens
 #usage: bash phresistance.sh 'ref_sequences/mcrAgene_*.fasta' 'ref_sequences/hsp70gene_*.fasta' './proteomes/proteome_*.fasta' ./proteomes/proteome_*mcra.txt ./proteomes/proteome_*hsp70.txt
 
 #combine mcrA reference sequences into one file
@@ -44,10 +44,30 @@ echo "proteome name: mcrA count, hsp70 count" > ./summarytable.txt
 for proteome in $3
 do
 number=$(echo $proteome | sed 's/.fasta//g' | tr -d ./proteomes_)
-var1=$(cat $4 | grep ">>" | wc -l)
-var2=$(cat $5 | grep ">>" | cut -d " " -f 3-6 | uniq | wc -l)
-echo "proteome_$number: $var1, $var2" >> ./summarytable.txt
+echo $number >> numberfile.txt
 done
 
+for mcra in $4
+do
+var1=$(cat $mcra | grep '>>' | wc -l)
+echo $var1 >> mcrafile.txt
+done
+
+for hsp70 in $5
+do
+var2=$(cat $hsp70 | grep '>>' | cut -d " " -f 3-6 | uniq | wc -l)
+echo $var2 >> hsp70file.txt
+done
+
+for i in {01..50}
+do
+name=$(cat numberfile.txt | head -n $i | tail -n 1)
+var1=$(cat mcrafile.txt | head -n $i | tail -n 1)
+var2=$(cat hsp70file.txt | head -n $i | tail -n 1)
+echo "proteome_$name: $var1, $var2" >> ./summarytable.txt 
+done
+
+
 #create list of candidate pH-resistant methanogens
-#cat summarytable.txt | grep "1," | sort -k 3 -nr | grep -v " 0" > candidatemethanogens.txt
+echo "candidate pH-resistant methanogens, best to worst:" > candidatemethanogens.txt
+cat summarytable.txt | grep "1," | sort -k 3 -nr | grep -v " 0" >> candidatemethanogens.txt
