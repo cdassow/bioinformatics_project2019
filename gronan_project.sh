@@ -66,14 +66,13 @@ done
 echo "Beginning hit counting"
 for fileS in *-hits.csv
 do
-	sed 's/_..\s/-/' $fileS
 	for (( a=1; a<=$5; a++ ))
 	do
-		gID=$(cat $fileS | head -n 1 | cut -d "-" -f 1)
+		gID=$(cat $fileS | head -n 1 | cut -d "_" -f 1)
 		echo "ID: $gID; a=$a"
-		cat $fileS | grep -h "$gID" >> gene_$a-$fileS
+		cat $fileS | grep -h "$gID" > gene_$a-$fileS
 		sed '/$gID/d' $fileS
-		sum=$(cat gene_$a-$fileS | cut -d "-" -f 2 | awk '{total = total + $1}END{print total}')
+		sum=$(cat gene_$a-$fileS | cut -d " " -f 2 | awk '{total = total + $1}END{print total}')
 		echo "Gene$a $sum" >> $(echo $fileS | cut -d "-" -f 1)-sums.csv
 	done
 #	rm $fileS
@@ -87,7 +86,7 @@ do
 	name=$(echo $fileF | cut -d "-" -f 1)
 	echo "$name $tot_sum" > proteome_list.txt
 	echo "$name calculation complete"
-#	rm $fileF
+	rm $fileF
 done
 # Sort the listed proteome totals and corresponding proteomes numerically, then isolate and export the top 10
 cat proteome_list.txt | sort -k 2 -n | head -n 10 > proteome_01.txt
