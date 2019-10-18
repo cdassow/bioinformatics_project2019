@@ -1,27 +1,37 @@
 #alignment of sequences
-#muscle must be in same directory as input file 
-######I think that we need to run muscle twice: 1 time to ID the mcrA gene  and a second time to ID the hsp70 gene
-
-
 #in ref_sequences directory
+#loop to put all mcrA ref sequences into one file
 for file in mcr*.fasta; do cat $file >> ../methanseqs.fa; done
-
 #muscle for mcr
 /afs/crc.nd.edu/user/c/ctalbot2/Private/bioinformatics_project2019/muscle -in methanseqs.fa -out methanseqs.afa
-
-#in hsp directory
-for file in hsp*.fasta; do cat $file >> ../hspgene_seqs.fa; done
-#muscle for hsp
-/afs/crc.nd.edu/user/c/ctalbot2/Private/bioinformatics_project2019/muscle -in hspgene_seqs.fa -out hsp_seqs.afa
-
-#hmmbuild
-/afs/crc.nd.edu/user/c/ctalbot2/Private/bioinformatics_project2019/hmmer-3.2.1/hmmbuild methanseqs.hmm methanseqs.afa   
-
+#hmmbuild for mcrA
+/afs/crc.nd.edu/user/c/ctalbot2/Private/bioinformatics_project2019/hmmer-3.2.1/hmmbuild methanseqs.hmm methanseqs.afa
 #hmmsearch
-#Usage: bash scri
-for file in *.fasta; do /afs/crc.nd.edu/user/c/ctalbot2/Private/bioinformatics_project2019/hmmer-3.2.1/bin/hmmsearch methanseqs.hmm $file > ${file}.out; done  
+for file in *.fasta; 
+do /afs/crc.nd.edu/user/c/ctalbot2/Private/bioinformatics_project2019/hmmer-3.2.1/bin/hmmsearch --tblout ${file}.out methanseqs.hmm $file;
+done
 
-#get methanogens from the search
+
+#get methanogens from the search (within methanresults)
+for file in *.out.fasta
+do
+echo ${file}
+if grep -E '[No hits detected that satisfy reporting thresholds]'
+then
+echo '0'
+else
+echo '1'
+fi
+done
+
+
+
+#loop to put all hsp70 ref sequences into one file
+for file in hsp*.fasta; do cat $file >> ../hspgene_seqs.fa; done
+#muscle for hsp to create alignment
+/afs/crc.nd.edu/user/c/ctalbot2/Private/bioinformatics_project2019/muscle -in hspgene_seqs.fa -out hsp_seqs.afa
+  
+
 
 #hmmbuild on hsp
 
