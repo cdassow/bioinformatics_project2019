@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  metadata/hsp.hmm
+# target sequence database:        proteomes/proteome_15.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hsp_ref  [M=618]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+     4e-103  342.3   7.9     1e-102  341.0   7.9    1.5  1  WP_011971911.1  2-alkenal reductase 
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_011971911.1  2-alkenal reductase 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  341.0   7.9  6.1e-106    1e-102       2     567 ..       3     569 ..       2     573 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 341.0 bits;  conditional E-value: 6.1e-106
+         hsp_ref   2 ekilGidlGttnsaaavleggkptiipnaeGa.rttPsvvafskdgeklvGepakrqavtnPentiasikrkmGeedykvklegkeytPqeisam 95 
+                     + i+GidlGt+ s + v++ gk   i + e +   +Ps++a+ ++ e +vG  ak        n++  +krk G +  k++ e++e+  +e+ a+
+  WP_011971911.1   3 NPIIGIDLGTSTSEIFVFKDGKQMPINDPESDsSVVPSIIAM-QNSEIIVGSQAKGL--L---NSLHELKRKRG-TGEKIRFENQEFFAEELEAH 90 
+                     569*************************99986789*****9.889*******9964..3...579999*****.999***************** PP
+
+         hsp_ref  96 ilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelgggvfe 190
+                     il+k+ k+ae+ylGe++++ v+tvPa f +  r+at + G++aGl+v  +inePtaa+la+G+ +  ++++i v+d+GGGtld+s+le+ gg  +
+  WP_011971911.1  91 ILKKLVKNAEDYLGEKISDVVVTVPANFAEPARKATYNIGKLAGLNVLGLINEPTAAALAFGIRNLSSNENIAVFDFGGGTLDISVLEMMGGFLD 185
+                     *********************************************************************************************** PP
+
+         hsp_ref 191 vlstsGdtqlGGddldeaiidyladefkkee.GidlredkaalqrlkdaaekakielssvleteinlPfitatdsgpkhlelkltrakleelved 284
+                     v+ +sG+ +lGG+d+de i++yl ++f + +   ++ ++++ l  lk  ae+ k  ls v+++++ +P      +  k+lel++tr ++++ +++
+  WP_011971911.1 186 VKISSGNPKLGGKDIDELIVEYLKKKFLSGNpNSNILNNQQNLLNLKLKAEELKKKLSMVTSSDVYIPNF---GGAGKDLELTITRNEFNNAIKP 277
+                     ***************************8754278999****************************88865...56789***************** PP
+
+         hsp_ref 285 lvertvapiekaleda...klsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqagvlaGev..kdivlldvtPlslgi 374
+                     +++ +++ i+ al+ a   +++++di +v+lvGGs+r+P+++e+v + +G+  +k++ Pd av +Ga+iq+++l+G +  ++++++dv+P+slg+
+  WP_011971911.1 278 VLDEIRVCIRDALKKAndkGVTQKDISRVLLVGGSSRIPVIQEVVMQEFGTALDKSISPDLAVGIGACIQSAILNGAInpDELMIMDVSPFSLGV 372
+                     *************866222699********************************************************8789************* PP
+
+         hsp_ref 375 etlG...gva.....erliernttiPtkkskvfttaadnqtsveihvlqGerelaeeneslGrf......kltgipPaPrGvPq.ievtfdidan 454
+                     e lG   gv+       l++ n+ +P + ++ ++   ++q +v i+++q   ++a+     G         +++ip + +G+P  + + f  d+n
+  WP_011971911.1 373 ECLGirnGVIipteySSLMPINSPMPYSVTNTYSLLHEEQNAVVIKLFQDPTGIATVTDDEGVIytgiegIIENIPKSDNGIPHpVKIDFSYDNN 467
+                     **9866655422222468999****************************999999744444432111112577899999****7699******** PP
+
+         hsp_ref 455 Gilnveakdlgtgkeesitieasaklsdeeiermkkdaekhaeedkkrkeeievrneaes..liqaaeklleeaedkvdedqkekveaaiedlke 547
+                     G++ ++a    t ++++i ie++           ++  +   ++ k  k  i    + e   ++++aek+l+ +e   de q++++ +++e  k+
+  WP_011971911.1 468 GLITLKAT-IPTLNNKEIYIEQKI----------TEGLNLQENNPKSVKIPISNGSHGEYtiYVERAEKILNSNEG--DEYQRDDLANTLERFKK 549
+                     *****997.567777788877542..........222222222333334444433344431156799999997764..67889999999999999 PP
+
+         hsp_ref 548 vleekdaeeikaktealsee 567
+                     + +++d  +i    ++l e 
+  WP_011971911.1 550 AWNDSDNSKIIRYSDRLIEL 569
+                     99999999998888877665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (618 nodes)
+Target sequences:                       1662  (483687 residues searched)
+Passed MSV filter:                       130  (0.078219); expected 33.2 (0.02)
+Passed bias filter:                       47  (0.0282792); expected 33.2 (0.02)
+Passed Vit filter:                         7  (0.00421179); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000601685); expected 0.0 (1e-05)
+Initial search space (Z):               1662  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9877.60
+//
+[ok]
