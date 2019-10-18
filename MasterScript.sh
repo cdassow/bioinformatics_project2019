@@ -52,5 +52,5 @@ done
 ############################################
 # This step finds potentially pH resistant methanogens and puts them all in a list for your enjoyment
 
-cat Summary1.txt | grep -v "0" | cut -d " " -f 1 > PhResistantMethanogens.txt
+cat Summary1.txt | grep -v " 0" | cut -d " " -f 1 > PhResistantMethanogens.txt
 
