@@ -1,0 +1,19 @@
+The promising candidate proteomes are listed with their hsp level:
+proteomes, hsp70 level
+proteome_50,3
+proteome_45,3
+proteome_42,3
+proteome_03,3
+proteome_24,2
+proteome_23,2
+proteome_07,2
+proteome_05,2
+proteome_48,1
+proteome_44,1
+proteome_39,1
+proteome_38,1
+proteome_19,1
+proteome_16,1
+proteome_15,1
+proteome_29,0
+

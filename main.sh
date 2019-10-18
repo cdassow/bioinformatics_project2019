@@ -37,11 +37,27 @@ cat stat_proteomes.csv | grep ", 0" | cut -d , -f 1 > hits_proteomes.csv
 # sequence search with hmmsearch on hsp70
 for file in $(cat hits_proteomes.csv)
 do
-	resultname=$(echo $file | sed 's/proteomes/metadata/' | sed 's/fasta/_hsp.rslt/')
+	resultname=$(echo $file | sed 's/proteomes/metadata/' | sed 's/.fasta/_hsp.rslt/')
 	./tools/hmmsearch metadata/hsp.hmm $file > $resultname
 done
 
-# make statistics on the number of hsp70 hits
+# make statistics on the number of hsp70 hits, longer search results suggest more hits
+# we noticed that the number in the line with 'Passed Fwd filter' output the hits number (hsp level)
+echo "" > stat_hsp_proteomes.csv
+for file in metadata/prot*hsp.rslt
+do
+	hsp=$(cat $file | grep 'Passed Fwd filter' | cut -d : -f 2 | sed 's/^[ \t]*//g' | cut -d ' ' -f 1)
+	ori_file=$(echo $file | sed 's/metadata\///' | sed 's/_hsp.rslt//')
+	stat="$ori_file,$hsp"
+	echo $stat >> stat_hsp_proteomes.csv
+done
+
+# rearrange the proteomes order by hsp level and records into a new file
+echo "The promising candidate proteomes are listed with their hsp level:" > candidates.txt
+echo "proteomes, hsp70 level" >> candidates.txt
+cat stat_hsp_proteomes.csv | sort -t , -rn -k2 >> candidates.txt
+
+
 
 
 
