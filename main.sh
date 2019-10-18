@@ -57,7 +57,7 @@ echo "The promising candidate proteomes are listed with their hsp level:" > cand
 echo "proteomes, hsp70 level" >> candidates.txt
 cat stat_hsp_proteomes.csv | sort -t , -rn -k2 >> candidates.txt
 
-
+# checked, the script run smoothly
 
 
 
