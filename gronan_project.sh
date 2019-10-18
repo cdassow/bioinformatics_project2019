@@ -71,7 +71,7 @@ do
 		gID=$(cat $fileS | head -n 1 | cut -d "_" -f 1)
 		echo "ID: $gID; a=$a"
 		cat $fileS | grep -h "$gID" > gene_$a-$fileS
-		sed -i '/"$gID"/d' $fileS
+		cat $fileS | sed -e "$gID"'d'
 		sum=$(cat gene_$a-$fileS | cut -d " " -f 2 | awk '{total = total + $1}END{print total}')
 		echo "Gene$a $sum" >> $(echo $fileS | cut -d "-" -f 1)-sums.csv
 	done
@@ -91,6 +91,6 @@ do
 done
 # Sort the listed proteome totals and corresponding proteomes numerically, then isolate and export the top 10
 cat proteome_list.txt | sort -k 2 -n | head -n 10 > proteome_01.txt
-rm proteome_list.txt # Remove the total proteome list to prevent clutter - comment out this line if the total list is
+#rm proteome_list.txt # Remove the total proteome list to prevent clutter - comment out this line if the total list is
 		     # desired
 echo "Finished - final output has been directed to proteome_01.txt"
