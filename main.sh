@@ -35,13 +35,14 @@ done
 cat stat_proteomes.csv | grep ", 0" | cut -d , -f 1 > hits_proteomes.csv
 
 # sequence search with hmmsearch on hsp70
-for file in proteomes/prot*.fasta
+for file in $(cat hits_proteomes.csv)
 do
 	resultname=$(echo $file | sed 's/proteomes/metadata/' | sed 's/fasta/_hsp.rslt/')
 	./tools/hmmsearch metadata/hsp.hmm $file > $resultname
 done
 
 # make statistics on the number of hsp70 hits
+
 
 
 
