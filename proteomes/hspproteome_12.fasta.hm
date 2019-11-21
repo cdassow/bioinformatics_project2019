@@ -1,0 +1,19 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_011957951.1       -          aligned_hsp_genes    -           8.9e-287  950.4  14.9  6.7e-253  838.5   9.4   2.0   2   0   0   2   2   2   2 molecular chaperone DnaK 
+WP_011958160.1       -          aligned_hsp_genes    -             3e-272  902.4  13.4  8.9e-241  798.5   6.9   2.0   2   0   0   2   2   2   2 molecular chaperone DnaK 
+WP_011955291.1       -          aligned_hsp_genes    -            7.3e-13   45.7   4.5   3.8e-11   40.0   4.5   2.7   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_011956039.1       -          aligned_hsp_genes    -            7.5e-10   35.7   5.6   1.3e-08   31.6   5.6   2.2   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_011959219.1       -          aligned_hsp_genes    -            0.00017   18.0   0.2    0.0011   15.4   0.0   1.9   2   0   0   2   2   2   1 carbohydrate kinase 
+WP_011958489.1       -          aligned_hsp_genes    -            0.00071   16.0   3.9    0.0047   13.3   0.5   2.8   3   0   0   3   3   3   1 cell division protein FtsA 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      ../ref_sequences/aligned_hsp_genes.hmm
+# Target file:     proteome_12.fasta
+# Option settings: ../../hmmer-3.2.1/bin/hmmsearch --tblout hspproteome_12.fasta.hm ../ref_sequences/aligned_hsp_genes.hmm proteome_12.fasta 
+# Current dir:     /afs/crc.nd.edu/user/e/epaietta/Private/bioinformatics_project2019/proteomes
+# Date:            Fri Oct 18 12:05:18 2019
+# [ok]
